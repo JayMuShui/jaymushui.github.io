@@ -1,6 +1,7 @@
 ---
 title: Étude Pour les Petites Supercordes
 date: 2024-06-02 03:40:00
+updated: 2024-06-02 03:40:00
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=22706984&auto=1&height=66"></iframe>
@@ -14,7 +15,7 @@ date: 2024-06-02 03:40:00
 ​无论是情感还是客观运行的世界，让我变得如此多虑且不敢前行。
 这片幼稚的安宁岁月将至将要倒塌，而我慌乱的不愿离去也暂时寻求不到勇气去前行，我还是呆滞着站着……直到再不能定格为止。
 
-![琴美](琴美.png)
+![琴美](https://telegraph-image-2qa.pages.dev/file/f585d5d249b6e63fa4bb3.png)
 
 ​
 

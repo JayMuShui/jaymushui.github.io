@@ -80,8 +80,8 @@ banner:
     icon: cib:apache-airflow
 bg_image: #图片背景
   enable: true
-  url: /images/Wallpaper/Light.jpg
-  dark: /images/Wallpaper/Dark.jpg
+  url: https://telegraph-image-2qa.pages.dev/file/6c1c05c308378badd4792.jpg
+  dark: https://telegraph-image-2qa.pages.dev/file/6c75c995bc9e1cbec0740.jpg
   blur: 20px # 设置背景模糊程度
   opacity: 1.0
 trianglify: #不规则图形背景
@@ -101,7 +101,7 @@ fireworks: #烟花
 
 ##侧边栏
 sidebar:
-  bg_image: /images/HexoTagsWallpaper.jpg
+  bg_image: https://telegraph-image-2qa.pages.dev/file/56a21040acdf06a3b8ccc.jpg
   bg_position: bottom 0rem center
   tagcloud:
     enable: false
@@ -220,17 +220,17 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
-      path: /images/Pay/AliPay_QRCode.jpg
+      path: https://telegraph-image-2qa.pages.dev/file/41984b4ad6781bd0fe94c.jpg
       color: '#00A3EE'
       icon: ri:alipay-line
       #link:
     - name: 微信支付
-      path: /images/Pay/WechatPayReward-QRCode.png
+      path: https://telegraph-image-2qa.pages.dev/file/f5e1305b73d2de54b43b5.png
       color: '#2DC100'
       icon: ri:wechat-pay-line
       #link:
     - name: QQ 支付
-      path: /images/Pay/QQPay_QRCode.png
+      path: https://telegraph-image-2qa.pages.dev/file/33f23d6508c07dea7a2a8.png
       color: '#12B7F5'
       icon: ri:qq-line
       #link:

@@ -6,101 +6,12 @@ date: 2024-06-15 22:40:00
 # 目录
 
 
-- [Kosub](#Kosub) 
 - [琴世](#Qinshi) 
+- [Kosub](#Kosub) 
+- [江卿](#JiangQing) 
+
 
  
-
-
-***
-
-# Kosub
-***更新于2024-06-15***
-
-<details>
-<summary>授权截图</summary>
-<p> 
-<img src="Approve-Kosub.jpg"/> 
-</p>
-</details>
-
-<div class="text-center">
-
-  <div class="site-author-avatar">
-
-    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=3200406422&spec=640&img_type=jpg" alt="portrait" title="ID : Kosub">
-
-  </div>
-
-</div>
-
-## 基本信息
-
-男，2006年4月8日生，180cm大帅锅
-白羊座，INFJ，母胎单身
-
-~~与我未来的 ？？二次元公司共同创业人，主画师~~
-**☩梦想**是成为一名二次元插画师，去🗾留学
-傻软二次元
-***编不下去了，本人自己不写***
-
->我们负责写Markdown文档的人是这样的，而这种人只要全身心投入到承受被半造谣半实话的介绍就可以，可是我们要考虑的事情就很多了。
-
-## 网络链接
-
-QQ：3200406422
-抖音：<https://v.douyin.com/ijW4WBdQ/>
-
-
-##  兴趣与成就
-
-***
-网易云音乐：<https://music.163.com/#/user?id=552804738/>
-
-**最近激推**
-***我怀疑是个虚拟歌姬他就推***
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2155423467&auto=0&height=66"></iframe>
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2155423468&auto=0&height=66"></iframe>
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2155422573&auto=0&height=66"></iframe>
-
-***
- 知更鸟，初音未来
-
-EVA厨
-
-**第五人格，重返1999，蔚蓝档案，原神，鸣潮，明日方舟，崩坏：星穹铁道.........**
-
-
-
-
-**成就：**
-
-**2024年广西壮族自治区艺考前百水平选手  ~~已落榜~~**
-
-某示范性高中2022届动漫社社长
-
-~~北京天安门未预约访问者~~
-
-
-最近动态：
-**2024-06-15 8:00(UTC+8)** 发布于QQ空间的新作品 **单马尾初音未来** 
-
-![初音未来](Kosub-初音未来.jpeg)
-
-
->[QQ空间链接  隐私设置不可见其他](https://user.qzone.qq.com/3200406422)
-
-## 与我
-
-- ~~都是人类~~
-- 同时毕业于某个广西高中，我时任动漫社副社长
-- 极度困倦的情况下坐他的车翻在清晨大马路中间双双受伤，由我继而驾驶
-- 抖音小火花累计100日 *2024-06-15*
-- 没我帅
-***
 
 # Qinshi    
 **琴世**
@@ -177,10 +88,10 @@ QQ：1908582235
 ## 晒照（日常/Coser）：
 
 
-![日常](Qinshi-LIVE.jpg)
+![日常](https://telegraph-image-2qa.pages.dev/file/f0ca78d3ffbf55685ee45.jpg)
 
 ***
-![COSPLAY](Qinshi-COSPLAY.jpg)
+![COSPLAY](https://telegraph-image-2qa.pages.dev/file/87d86cf20081bb20f6321.jpg)
 
 ***
 ## 与我
@@ -190,6 +101,129 @@ QQ：1908582235
 - 都玩崩坏：星穹铁道
 - ~~太多了想不到~~
 
+
 ***
 
+# Kosub
+***更新于2024-07-11***
 
+<details>
+<summary>授权截图</summary>
+<p> 
+<img src="https://telegraph-image-2qa.pages.dev/file/bf81b25e9cf07821cd4d7.jpg"/> 
+</p>
+</details>
+
+<div class="text-center">
+
+  <div class="site-author-avatar">
+
+    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=3200406422&spec=640&img_type=jpg" alt="portrait" title="ID : Kosub">
+
+  </div>
+
+</div>
+
+## 基本信息
+
+男，2006年4月8日生，180cm大帅锅
+白羊座，INFJ，母胎单身
+
+~~与我未来的 ？？二次元公司共同创业人，主画师~~
+**☩梦想**是成为一名二次元插画师，去🗾留学
+傻软二次元
+***编不下去了，本人自己不写***
+
+>我们负责写Markdown文档的人是这样的，而这种人只要全身心投入到承受被半造谣半实话的介绍就可以，可是我们要考虑的事情就很多了。
+
+## 网络链接
+
+QQ：3200406422
+抖音：<https://v.douyin.com/ijW4WBdQ/>
+
+
+##  兴趣与成就
+
+***
+网易云音乐：<https://music.163.com/#/user?id=552804738/>
+
+**最近激推**
+***我怀疑是个虚拟歌姬他就推***
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2155423467&auto=0&height=66"></iframe>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2155423468&auto=0&height=66"></iframe>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2155422573&auto=0&height=66"></iframe>
+
+***
+ 知更鸟，初音未来
+
+EVA厨
+
+**第五人格，重返1999，蔚蓝档案，原神，鸣潮，明日方舟，崩坏：星穹铁道.........**
+
+
+
+
+**成就：**
+
+**2024年广西壮族自治区艺考前百水平选手  ~~已落榜~~**
+
+某示范性高中2022届动漫社社长
+
+~~北京天安门未预约访问者~~
+
+
+最近动态：
+**2024-06-15 8:00(UTC+8)** 发布于QQ空间的新作品 **单马尾初音未来** 
+
+![初音未来](https://telegraph-image-2qa.pages.dev/file/86ca8ced0436b4c4ddf70.jpg)
+
+
+>[QQ空间链接  隐私设置不可见其他](https://user.qzone.qq.com/3200406422)
+
+## 与我
+
+- ~~都是人类~~
+- 同时毕业于某个广西高中，我时任动漫社副社长
+- 极度困倦的情况下坐他的车翻在清晨大马路中间双双受伤，由我继而驾驶
+- ~~抖音小火花累计100日 *2024-06-15*~~
+- 抖音小火花灭了，孩子不要了 *2024-07-11*
+- 没我帅
+***
+
+# JiangQing
+**江卿**
+
+***更新于2024-07-11***
+
+
+<div class="text-center">
+
+  <div class="site-author-avatar">
+
+    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2987379783&spec=640&img_type=jpg" alt="portrait" title="ID : JiangQing">
+
+  </div>
+
+</div>
+
+## 基本信息
+
+男，2006年3月2日生，大帅锅
+
+**(UTC+8)2024-07-11 05:23:51 目前在等飞机**
+
+![啊哈哈哈哈](https://telegraph-image-2qa.pages.dev/file/b5895e3a63f5737df1049.jpg)
+
+```
+还在施工
+```
+
+![啊哈哈哈哈](https://telegraph-image-2qa.pages.dev/file/57241216aabe66eb9abdb.jpg)
+![啊哈哈哈哈](https://telegraph-image-2qa.pages.dev/file/57241216aabe66eb9abdb.jpg)
+![啊哈哈哈哈](https://telegraph-image-2qa.pages.dev/file/57241216aabe66eb9abdb.jpg)
+## 与我
+
+- 都是疯子
