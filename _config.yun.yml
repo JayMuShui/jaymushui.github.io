@@ -220,17 +220,17 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
-      path: https://telegraph-image-2qa.pages.dev/file/41984b4ad6781bd0fe94c.jpg
+      path: https://telegraph-image-2qa.pages.dev/file/39a8ee1455e501b17452c.jpg
       color: '#00A3EE'
       icon: ri:alipay-line
       #link:
     - name: 微信支付
-      path: https://telegraph-image-2qa.pages.dev/file/f5e1305b73d2de54b43b5.png
+      path: https://telegraph-image-2qa.pages.dev/file/8d161c08702bac336be1d.png
       color: '#2DC100'
       icon: ri:wechat-pay-line
       #link:
     - name: QQ 支付
-      path: https://telegraph-image-2qa.pages.dev/file/33f23d6508c07dea7a2a8.png
+      path: https://telegraph-image-2qa.pages.dev/file/c0860e35503bc7b48b3bf.png
       color: '#12B7F5'
       icon: ri:qq-line
       #link:
