@@ -16,8 +16,8 @@ say:
     api: https://v1.hitokoto.cn
 
 #标签、分类颜色
-tags:
-categories:
+#tags: 
+#categories: 
 
 ##头部资源
 head:
@@ -58,9 +58,11 @@ colors:
   primary: '#cb75cb'
   # bg: "#F5F5F5"
   selection_bg: '#8e71c1' # 选取文字时的背景色
-  # 标签云中标签的起始色和结束色
-  # tag_start_color:
-  # tag_end_color:
+wordcloud:
+  enable: true
+ # 标签云中标签的起始色和结束色
+  #tag_start_color: '#d0b9db'
+  #tag_end_color: '#5c3c9e'
 ##主题艺术标题字
 banner:
   enable: true
@@ -161,37 +163,42 @@ social:
     color: '#0088CC'
   
   - name: Discord
-    link: https://discord.com/invite/XVbDRW2X
+    link: https://discord.gg/phTwnqcTb6
     icon: ri:discord-line
     color: '#5A6DE2'
   
   - name: QQ
-    link: /images/QQ.jpg
+    link: https://telegraph-image-2qa.pages.dev/file/7d33f995cab76537ff1db.jpg
     icon: ri:qq-line
     color: '#12B7F5'
   
-  - name: 哔哩哔哩|Bilibili
+  - name: 哔哩哔哩 | Bilibili
     link: https://space.bilibili.com/447538884
     icon: ri:bilibili-line
     color: '#FF8EB3'
   
-  - name: 抖音|Chinese Tiktok/Douyin
+  - name: 抖音 | Chinese Tiktok/Douyin
     link: https://v.douyin.com/ijnW2SjQ/
     icon: ri:tiktok-line
     color: '#000000'
   
-  - name: 百度贴吧|Tieba
+  - name: 百度贴吧 | Tieba
     link: https://tieba.baidu.com/home/main?id=tb.1.59e2d8be.7M1jjgg8P1zLx8vptZ7Vdw
     icon: ri:baidu-line
     color: '#0084FF'
   
-  - name: 知乎|Zhihu
+  - name: 知乎 | Zhihu
     link: https://www.zhihu.com/people/jaymushui
     icon: ri:zhihu-line
     color: '#0084FF'
   
+  - name: 新浪微博|Sina Weibo
+    link: https://weibo.com/u/6509902620
+    icon: ri:weibo-line
+    color: '#ca5963'
   
   
+
   
 
 ###文章
@@ -317,3 +324,4 @@ aplayer:
       id: 6630602794
       server: netease
       type: playlist
+

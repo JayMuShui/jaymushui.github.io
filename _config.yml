@@ -117,7 +117,7 @@ deploy:
   type: git
   repo: https://github.com/JayMuShui/jaymushui.github.io
   branch: master
-  message:  # 你可以自定义此次部署更新的说明
+  message:  enable tags,categories and excerpt etc. # 你可以自定义此次部署更新的说明
 
 #Display/播放器
 aplayer:

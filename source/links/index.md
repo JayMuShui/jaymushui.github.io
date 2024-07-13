@@ -1,20 +1,12 @@
 ---
-title: My Gooooooooood Friends
-date: 2024-06-15 22:40:00
+title: My Gooooooooood Friends | 豪盆友
+description: 用来挂人的
+toc: true
+hideTime: true
 ---
-***
-# 目录
 
+# 琴世    
 
-- [琴世](#Qinshi) 
-- [Kosub](#Kosub) 
-- [江卿](#JiangQing) 
-
-
- 
-
-# Qinshi    
-**琴世**
 
 ***更新于2024-06-15***
 
@@ -76,7 +68,7 @@ QQ：1908582235
 
 
 
-## 成就工作：
+## 成就工作
 
 **广西某漫展协办（→主办方）之一**
 
@@ -85,7 +77,7 @@ QQ：1908582235
 好好的活到了今天
 
 
-## 晒照（日常/Coser）：
+## 晒照（日常/Coser）
 
 
 ![日常](https://telegraph-image-2qa.pages.dev/file/f0ca78d3ffbf55685ee45.jpg)
@@ -193,8 +185,8 @@ EVA厨
 - 没我帅
 ***
 
-# JiangQing
-**江卿**
+# 江卿
+
 
 ***更新于2024-07-11***
 
