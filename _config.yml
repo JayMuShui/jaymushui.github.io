@@ -111,17 +111,18 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: yun
 
-# Deployment/部署
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: https://github.com/JayMuShui/jaymushui.github.io
-  branch: master
-  message:  enable tags,categories and excerpt etc. # 你可以自定义此次部署更新的说明
-
 #Display/播放器
 aplayer:
   cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
   style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
   meting: true
   meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+
+# Deployment/部署
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: https://github.com/JayMuShui/jaymushui.github.io
+  branch: master
+  message:  Update the post on the history of my school # 你可以自定义此次部署更新的说明
+
