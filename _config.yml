@@ -124,5 +124,5 @@ deploy:
   type: git
   repo: https://github.com/JayMuShui/jaymushui.github.io
   branch: master
-  message:  Update the post on the history of my school # 你可以自定义此次部署更新的说明
+  message:  上传一篇自己的旧文章 # 你可以自定义此次部署更新的说明
 
