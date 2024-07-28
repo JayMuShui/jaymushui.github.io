@@ -185,29 +185,4 @@ EVA厨
 - 没我帅
 ***
 
-# 江卿
 
-
-***更新于2024-07-11***
-
-
-<div class="text-center">
-
-  <div class="site-author-avatar">
-
-    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2987379783&spec=640&img_type=jpg" alt="portrait" title="ID : JiangQing">
-
-  </div>
-
-</div>
-
-## 基本信息
-
-男，2006年3月2日生，170cm+真性情大男儿，
-♓双鱼座，
-
-![啊哈哈哈哈](https://telegraph-image-2qa.pages.dev/file/57241216aabe66eb9abdb.jpg)
-
-## 与我
-
-- 都是疯子
