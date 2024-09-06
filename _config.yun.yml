@@ -55,9 +55,9 @@ mourn:
     - 9-18
     - 12-23
 colors:
-  primary: '#cb75cb'
+  primary: '#e5aa82'
   # bg: "#F5F5F5"
-  selection_bg: '#8e71c1' # 选取文字时的背景色
+  selection_bg: '#dcc48c' # 选取文字时的背景色
 wordcloud:
   enable: true
  # 标签云中标签的起始色和结束色
@@ -76,15 +76,15 @@ banner:
   border: true
   cloud:
     enable: true
-    color: pink
+    color: yellow
   go_down:
     enable: true
     icon: cib:apache-airflow
 bg_image: #图片背景
   enable: true
-  url: https://telegraph-image-2qa.pages.dev/file/6c1c05c308378badd4792.jpg
-  dark: https://telegraph-image-2qa.pages.dev/file/6c75c995bc9e1cbec0740.jpg
-  blur: 20px # 设置背景模糊程度
+  url: https://2dcaf961.telegraph-image-2qa.pages.dev/file/6f397636d7cee1ad17a70.jpg
+  dark: https://2dcaf961.telegraph-image-2qa.pages.dev/file/f4874c2bbc98f106d2e9b.jpg
+  blur: 5px # 设置背景模糊程度
   opacity: 1.0
 trianglify: #不规则图形背景
   enable: false
