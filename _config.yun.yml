@@ -103,7 +103,7 @@ fireworks: #烟花
 
 ##侧边栏
 sidebar:
-  bg_image: https://telegraph-image-2qa.pages.dev/file/56a21040acdf06a3b8ccc.jpg
+  bg_image: https://telegraph-img-by-bot.pages.dev/file/56a21040acdf06a3b8ccc.jpg
   bg_position: bottom 0rem center
   tagcloud:
     enable: false
@@ -137,10 +137,10 @@ menu:
     path: https://github.com/JayMuShui/jaymushui.github.io
     icon: uil:github-alt
 pages:
-  - name: My Gooooooooood Friends
-    url: /links/
-    icon: uil:channel
-    color: dodgerblue
+  #- name: My Gooooooooood Friends
+  #  url: /links/
+  #  icon: uil:channel
+  #  color: dodgerblue
 social:
   - name: E-Mail
     link: mailto:JayMuShui@outlook.com
@@ -168,9 +168,14 @@ social:
     color: '#5A6DE2'
   
   - name: QQ
-    link: https://telegraph-image-2qa.pages.dev/file/7d33f995cab76537ff1db.jpg
+    link: https://telegraph-img-by-bot.pages.dev/file/7d33f995cab76537ff1db.jpg
     icon: ri:qq-line
     color: '#12B7F5'
+  
+  - name: 微信公众号 | WeChat Public Platform
+    link: https://telegraph-img-by-bot.pages.dev/file/1729946797712_公众号.png
+    icon: ri:wechat-fill
+    color: '#54dc64'
   
   - name: 哔哩哔哩 | Bilibili
     link: https://space.bilibili.com/447538884
@@ -227,17 +232,17 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
-      path: https://telegraph-image-2qa.pages.dev/file/39a8ee1455e501b17452c.jpg
+      path: https://telegraph-img-by-bot.pages.dev/file/1729947121338_Alipay.jpg
       color: '#00A3EE'
       icon: ri:alipay-line
       #link:
     - name: 微信支付
-      path: https://telegraph-image-2qa.pages.dev/file/8d161c08702bac336be1d.png
+      path: https://telegraph-img-by-bot.pages.dev/file/1729947118099_WeChatPay.png
       color: '#2DC100'
       icon: ri:wechat-pay-line
       #link:
     - name: QQ 支付
-      path: https://telegraph-image-2qa.pages.dev/file/c0860e35503bc7b48b3bf.png
+      path: https://telegraph-img-by-bot.pages.dev/file/1729947117502_QQPay.png
       color: '#12B7F5'
       icon: ri:qq-line
       #link:

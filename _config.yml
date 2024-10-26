@@ -124,5 +124,5 @@ deploy:
   type: git
   repo: https://github.com/JayMuShui/jaymushui.github.io
   branch: master
-  message: 更新了背景图 # 你可以自定义此次部署更新的说明
+  message: 修改歌单列表和一些小细节 # 你可以自定义此次部署更新的说明
 

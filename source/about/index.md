@@ -40,7 +40,7 @@ toc: true
 ## 国内
 -  QQ ：467802673
 
-![QQ](https://telegraph-image-2qa.pages.dev/file/7d33f995cab76537ff1db.jpg)
+![QQ](https://telegraph-img-by-bot.pages.dev/file/7d33f995cab76537ff1db.jpg)
 **专门用来加各种事情的小伙伴用的**
 - 哔哩哔哩：<https://space.bilibili.com/447538884>
 **（）（），（）🐎（）（）（）（）（）!**
