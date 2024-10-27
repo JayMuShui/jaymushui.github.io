@@ -8,7 +8,7 @@
 
 2024-10-26 21:20:13(UTC+8) 
 
-我甜蜜地终于在哈尔滨舍得更新一下网站了，我就不在描述文件里面吐槽太多了，要不然有失技术风格！
+我甜蜜地终于在哈尔滨舍得更新一下网站了，我就不在描述文件里面吐槽太多了，要不然有失技术风格！<br>
 1.本次在联系方式处添加了[微信公众号](https://telegraph-img-by-bot.pages.dev/file/1729946797712_公众号.png)<br>
 2.以及替换掉了因为API被封锁导致失效的Telegraph图床为重置版的方案，请见[https://github.com/JayMuShui/Telegraph-Img-by-bot]<br>
 3.隐藏了Good Friends的页面，有所考虑重写内容。<br>
