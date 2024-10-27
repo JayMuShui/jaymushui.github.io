@@ -84,6 +84,121 @@
       </tags>
   </entry>
   <entry>
+    <title>【面向IT类专业弱基础学生】Visual Studio Code 安装与C&amp;C++ 编程运行环境配置等相关知识点教程</title>
+    <url>/2024/10/26/%E3%80%90%E9%9D%A2%E5%90%91IT%E7%B1%BB%E4%B8%93%E4%B8%9A%E5%BC%B1%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%94%9F%E3%80%91Visual%20Studio%20Code%20%E5%AE%89%E8%A3%85%E4%B8%8EC&amp;C++%20%E7%BC%96%E7%A8%8B%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E7%AD%89%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="写在开头的"><a href="#写在开头的" class="headerlink" title="写在开头的"></a>写在开头的</h1><p>说来无奈，如果不是因为要写这篇文章，我感觉我甚至连网站都懒得更新，但与此现实中的我，压根也不清楚是因为按照什么挑选，被自己学院本年级安排和其他几个小伙伴负责在大一的晚自修和各专业的程序设计基础课（C语言）学习感到吃力的学生进行“学习困难生”补习。若不是因为需要备课和准备供学生阅读的资料，我甚至不会写这类文章（其实本身也没写多少文章吧…….）<br><strong>哎！那聪明的小朋友又要问了，备课和资料为什么不通过PPT或者Words文档或者PDF的方式准备呢？</strong><br>我觉得，本着知识流通的想法（因为本博客本身就能被Bing搜索引擎展示），写都写了，不如直接对外也公开，没准真能帮到哪个清澈愚蠢的大学生呢？<br>说是自己写，其实也是东拼西凑总结的资料（总比东看西看要方便吧）<br><code>声明：本文转载内容遵循 CC 4.0 BY-SA 版权协议将附上原文出处链接，用于演示的电脑系统为Windows 11，涉及的一些功能设置与 Windows 10 存在差异，如有相关需要的Windows 10 用户请通过搜索引擎搜索相关内容</code><br><del>泥🐴的怎么这么多话！</del></p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/1729957060934_E9C252110AAE2A02FBF57E0386A88DF6.gif" alt="E9C252110AAE2A02FBF57E0386A88DF6.gif" loading="lazy"></p>
+<span id="more"></span>
+<h2 id="致东方学生的"><a href="#致东方学生的" class="headerlink" title="致东方学生的"></a>致东方学生的</h2><p>除了上面是为了本人博客&#x2F;公众号发布内容的格式外写的<del>废</del>话，以下讲的内容均等同于课堂上的教程与知识点（于2024-10-27 18:15~19:05节次课），因为资源涉及的外国服务器网站较多，为了节省课内时间，均会直接提供最新版资源。</p>
+<h1 id="导入（谁见了都想摇头的概念篇）"><a href="#导入（谁见了都想摇头的概念篇）" class="headerlink" title="导入（谁见了都想摇头的概念篇）"></a>导入（谁见了都想摇头的概念篇）</h1><blockquote>
+<p><del>鲁迅曾经说过</del>一句真理：要写代码并让其能够运行起来得先安装编辑器和编译器</p>
+</blockquote>
+<h2 id="编辑器、编译器、解释器、调试器与IDE"><a href="#编辑器、编译器、解释器、调试器与IDE" class="headerlink" title="编辑器、编译器、解释器、调试器与IDE"></a>编辑器、编译器、解释器、调试器与IDE</h2><p><strong>哎！那聪明的小朋友要问了，关于这类又关联的东西好像有叫编辑器、编译器、解释器、调试器与IDE的？他们分别是什么呢？</strong><br><img src="https://telegraph-img-by-bot.pages.dev/file/57241216aabe66eb9abdb.jpg" loading="lazy"></p>
+<p><a href="https://blog.csdn.net/weixin_45905650/article/details/107916093"><em>引用</em></a></p>
+<h3 id="编辑器⭐"><a href="#编辑器⭐" class="headerlink" title="编辑器⭐"></a>编辑器⭐</h3><p>用于编程的编辑器为文本编辑器（文字编辑器）仅仅是用作编写普通文字的应用软件，<br>它与文档编辑器（文字处理器）最直接的不同之处在于它无法用作排版，我们最常用的手机便签，Words文档便直接意思上属于文档编辑器，是可以进行例如<strong>字体颜色大小设置、文字居中居左居右、首行缩进等（如图所示）</strong>操作的，但是文字编辑器只能用于编写纯文本（部分软件设置的字体大小颜色也并不会作为文字的标签一起储存）<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729958258044_Word%E6%96%87%E6%A1%A3.png" alt="Word文档.png" loading="lazy"></p>
+<h3 id="编译器⭐"><a href="#编译器⭐" class="headerlink" title="编译器⭐"></a>编译器⭐</h3><p>把源代码（我们所键入的文字属于高级语言）转换成（翻译）为低级语言（机器语言）供计算机识别的程序<br><del>一个现代编译器的主要工作流程：源代码 (source code) → 预处理器 (preprocessor) → 编译器 (compiler) → 目标代码 (object code) → 链接器 (Linker) → 可执行程序 (executables)。</del><br>对于初学者的我们来讲，这样的描述似乎有点太复杂了，依照课本以及现在编译器功能完备同时处理的步骤多，可以简单省略为三步，毕竟大多数人，在以后的工作中都不会涉及到这类底层的内容</p>
+<p><strong>源代码 (source code)  → 目标代码 (object code)  → 可执行程序 (executables)</strong></p>
+<p>在C语言中分别对应的文件后缀&#x2F;拓展名是.c .obj(.o) .exe</p>
+<blockquote>
+<p>文件后缀&#x2F;拓展名是操作系统用来标记文件类型格式的一种机制，在Windows操作系统上是默认隐藏常见格式的，可通过勾选打开显示（❗请注意在重命名文件时若不是<strong>需要</strong>，请勿错误修改）<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729959551700_%E5%90%8E%E7%BC%80%E5%90%8D%E6%98%BE%E7%A4%BA.png" alt="后缀名显示.png" loading="lazy"></p>
+</blockquote>
+<p>编译器负责将高级语言，如C语言这些编程语言转换成变为机器可识别的二进制文件。</p>
+<h3 id="解释器"><a href="#解释器" class="headerlink" title="解释器"></a>解释器</h3><p>直接把高级编程语言一行一行转译运行，重点是不会一次把整个程序转译出来，因此运行速度比较缓慢，它每转译一行程序就立刻运行，然后再转译下一行，再运行，如此不停地进行下去。</p>
+<p>解释器是帮助解释型语言一行一行的翻译成机器语言，程序是不需要编译的。</p>
+<h3 id="调试器"><a href="#调试器" class="headerlink" title="调试器"></a>调试器</h3><p>调试器是自从计算机诞生伊始就始终伴随着程序员的一个挚友，这个很好理解，就是控制软件运行、查看软件运行中信息、修改软件执行流程等作用，通俗的讲调试器是用来在程序运行以后，根据运行状况来检查错误。</p>
+<h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><p>集成开发环境（IDE，Integrated Development Environment ），一般包括代码编辑器、编译器、调试器和图形用户界面工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。<br><strong>翻译成人话就是，在一个软件内集成了编程开发一整条的功能</strong></p>
+<p>例如（黑龙江东方学院）学校机房所使用的软件<strong>Dev-C++</strong>(2005年)和<strong>Code::Blocks</strong>(2001年)均为IDE，极大方便了初学者的安装使用，虽然时至今日软件依旧存在以几年为频率的更新，但是近二十多年前的软件势必在实用性和功能上有所脱轨于实际就业使用，下文将介绍标题所示Visual Studio Code 安装与介绍。</p>
+<h2 id="C语言？"><a href="#C语言？" class="headerlink" title="C语言？"></a>C语言？</h2><p>C语言是一种较早的程序设计语言，诞生于1972年的贝尔实验室。1972 年，Dennis Ritchie 设计了C语言，它继承了B语言的许多思想，并加入了数据类型的概念及其他特性。 </p>
+<p>C语言是一门<strong>面向过程</strong>的计算机编程语言，与C++、C#、Java等面向对象编程语言有所不同。<del>C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。C语言描述问题比汇编语言迅速、工作量小、可读性好、易于调试、修改和移植，而代码质量与汇编语言相当。C语言一般只比汇编语言代码生成的目标程序效率低10%-20%。因此，C语言可以编写系统软件。</del></p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/1729993314693_%E9%80%80%E7%BD%91%E4%BA%86%EF%BC%8C%E5%93%A5%E4%BB%AC.jpg" loading="lazy"></p>
+<p>专业术语是这样的，我们只要看不懂就可以了，可是专业术语要考虑的事情就多了。</p>
+<h3 id="面向过程编程与面向对象编程的区别（人话版）"><a href="#面向过程编程与面向对象编程的区别（人话版）" class="headerlink" title="面向过程编程与面向对象编程的区别（人话版）"></a>面向过程编程与面向对象编程的区别（人话版）</h3><p><a href="https://zhuanlan.zhihu.com/p/75265007"><em>引用</em></a></p>
+<p>假设一个问题： 洗衣机里面放有脏衣服，怎么洗干净？</p>
+<h4 id="面向过程的解决方法"><a href="#面向过程的解决方法" class="headerlink" title="面向过程的解决方法"></a>面向过程的解决方法</h4><p>1、执行加洗衣粉方法；</p>
+<p>2、执行加水方法；</p>
+<p>3、执行洗衣服方法；</p>
+<p>4、执行清洗方法；</p>
+<p>5、 执行烘干方法；</p>
+<p>以上就是将解决这个问题的过程拆成一个个方法（是没有对象去调用的），通过一个个方法的执行来解决问题。</p>
+<h4 id="面向对象的解决方法"><a href="#面向对象的解决方法" class="headerlink" title="面向对象的解决方法"></a>面向对象的解决方法</h4><p>1、我先弄出两个对象：分别是“洗衣机”对象和“人”对象</p>
+<p>2、针对对象“洗衣机”加入一些属性和方法分别是“洗衣服方法”“清洗方法”、“烘干方法”</p>
+<p>3、针对对象“人”加入属性和方法：“加洗衣粉方法”、“加水方法”</p>
+<p>4、然后执行</p>
+<p>人.加洗衣粉</p>
+<p>人.加水</p>
+<p>洗衣机.洗衣服</p>
+<p>洗衣机.清洗</p>
+<p>洗衣机.烘干</p>
+<p>面向对象编程就是先抽象出对象，再对对象进行一些定义，然后用对象执行方法的方式解决问题。</p>
+<p>两者着重的角度不同，C语言属于面向过程语言，C++属于面向对象语言，虽然两者存在极其相似的结构与语法 <strong>（类似于汉语和日语的关系）</strong>，并且共用编译器，但是这完全不能混为一谈，两者都需要系统性的从头到尾学习。</p>
+<h3 id="解释型（即时编译型）语言"><a href="#解释型（即时编译型）语言" class="headerlink" title="解释型（即时编译型）语言"></a>解释型（即时编译型）语言</h3><p> 常见的解释型语言包括Python、 JavaScript 、Ruby、PHP等，这些语言和编译型语言属于对立的概念，他们并不需要编译器编译后进行运行。</p>
+<p>以JavaScript为例，这门语言常用于网页前端开发，网页中由Html定义内容，CSS定义布局，而JS定义了这些显示出来内容的行为（交互），打个比方，JS可以即时在编辑器中定义某个按钮的作用是什么，保存文件后，在测试端显示的网页就会即时更新，并不需要编译。</p>
+<h1 id="Visual-Studio-Code-介绍与安装"><a href="#Visual-Studio-Code-介绍与安装" class="headerlink" title="Visual Studio Code 介绍与安装"></a>Visual Studio Code 介绍与安装</h1><p>Visual Studio Code（简称“VS Code” ）是Microsoft在2015年4月30日Build开发者大会上正式宣布一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代Web和云应用的跨平台源代码编辑器， 可在桌面上运行，并且可用于Windows，macOS和Linux。它具有对JavaScript，TypeScript和Node.js的内置支持，并具有丰富的其他语言（例如C++，C＃，Java，Python，PHP，Go）和运行时（例如.NET和Unity）扩展的生态系统。</p>
+<p>虽然在分类上，VS Code也属于IDE，但是单论其安装时的出厂设置，虽然具有IDE的特征，但是更多的，在进行自定义安装插件和配置编译器前，对于初学者来讲，这更类似于一个有<strong>自动补全功能</strong>和内置调用终端的编辑器</p>
+<h2 id="Why-VS-Code？"><a href="#Why-VS-Code？" class="headerlink" title="Why VS Code？"></a>Why VS Code？</h2><p>在如今的计算机行业中，VS Code作为轻量级拥有更加新的版本跟进，更方便的与各大平台链接，背靠丰富的插件扩展市场，更加现代化的UI</p>
+<p><strong>致东方学生：<br>虽然贴合内容相对滞后的课本无疑让大家更容易上手，但这也容易让部分理解能力弱的同学在未来的实际使用和工作中增加了学习成本，而且课本和课堂上也并没有对编程前的环境配置展开更详细的介绍，这导致在一些同学在编程软件的使用中存在诸多问题。因此，我们抱着“授人以鱼不如授人以渔”的想法，借这个机会，从安装VSCode和配置C&#x2F;C++编译器的过程中让大家更深入理解这些概念，并使用VSCode展开后续的教学。</strong></p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/1729993952986_VSCode.png" alt="VSCode.png" loading="lazy"><em>本网站在我计算机上的编程工作环境（JS CSS HTML)</em></p>
+<blockquote>
+<p>补充：Visual Studio（紫色那个玩意）和Visual Studio Code（蓝色那个玩意）区别<br>两者都是微软公司开发的两款不同的开发工具，它们都属于IDE（集成开发环境），但功能和使用场景有所不同。<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729994924370_%E5%AF%B9%E6%AF%94.png" alt="对比.png" loading="lazy"><br><strong>Visual Studio（VS）</strong>是一款功能强大的IDE，适用于开发桌面应用程序、Web应用程序、移动应用程序和云服务。它支持多种编程语言，如C#、C++、Visual Basic、JavaScript和Python，并提供了丰富的工具和功能，包括代码编辑器、调试器、图形化设计工具和自动化构建工具。Visual Studio还提供了版本控制、团队协作和测试工具，帮助开发团队协同开发和管理项目。<br><strong>Visual Studio Code（VSCode）</strong>则是一款轻量级的跨平台代码编辑器，它同样支持多种编程语言，并提供了强大的代码编辑和调试功能。VSCode的特点包括版本控制、智能代码补全、代码片段和内置终端等。此外，VSCode还提供了丰富的主题和界面定制选项，满足开发者对个性化编辑环境的需求。<br>在选择使用Visual Studio或VSCode时，可以根据具体的开发需求来决定。如果是进行大型项目开发，可能更倾向于使用Visual Studio，因为它提供了一站式的开发工具和环境。而对于Web开发或轻量级的开发任务，VSCode可能是更合适的选择，因为它的灵活性和高效性。</p>
+</blockquote>
+<h2 id="1-下载-VS-Code-安装工具"><a href="#1-下载-VS-Code-安装工具" class="headerlink" title="1. 下载 VS Code 安装工具"></a>1. 下载 VS Code 安装工具</h2><p><a href="https://blog.csdn.net/qq_42417071/article/details/137438374"><em>下文的大部分引用</em></a></p>
+<p>官方下载链接：<a href="https://code.visualstudio.com/">Visual Studio Code - Code Editing. Redefined</a></p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/1729995824784_VSCODE%20%E7%BD%91%E9%A1%B5.png" alt="1729995824784_VSCODE 网页.png (2560×1366)" loading="lazy"></p>
+<p>直接点<em>“Download for Windows”</em> 就可以进行下载。</p>
+<h2 id="2-安装-VS-Code"><a href="#2-安装-VS-Code" class="headerlink" title="2. 安装 VS Code"></a>2. 安装 VS Code</h2><p><code>演示版本为VSCodeUserSetup-x64-1.94.2.exe</code></p>
+<p>双击运行<code>VSCodeUserSetup-x64-1.94.2.exe</code>。<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729996005663_%E5%AE%89%E8%A3%85%E5%8C%85.png" alt="安装包.png" loading="lazy"></p>
+<p>成功弹出安装窗口后选择<code>我同意此协议</code>并单击<code>下一步</code>。<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729996216629_%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE.png" alt="用户协议.png" loading="lazy"></p>
+<p>这里提示 VS Code 的安装位置，根据你的需求选择安装位置（推荐非C盘），点击<code>下一步</code>。<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729997727416_%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE.png" alt="安装位置.png" loading="lazy"><br>这一步是创建快捷方式的名字，可以输入其他名字，下面的选项如果不勾选，就会把快捷方式添加到开始菜单中。我选择默认，直接点<code>下一步</code>。<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729997771701_%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F.png" alt="快捷方式.png" loading="lazy"><br>这一步是附加任务，选择，圈红的部分务必勾上，其他两项是决定在右键菜单中是否集成VS Code的快捷打开功能，再点<code>下一步</code><br><img src="https://telegraph-img-by-bot.pages.dev/file/1729997875613_%E5%8B%BE%E9%80%89%E4%BB%BB%E5%8A%A1.png" alt="勾选任务.png" loading="lazy"><br>最后再确认一下信息，确认之后直接安装即可，完成后运行即可<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729998008673_%E7%A1%AE%E8%AE%A4%E4%BB%BB%E5%8A%A1.png" alt="确认任务.png" loading="lazy"></p>
+<h2 id="3-汉化与配置"><a href="#3-汉化与配置" class="headerlink" title="3.汉化与配置"></a>3.汉化与配置</h2><p>VS Code第一次弹出时是英文界面，点击左侧栏的扩展页，在搜索框搜索<code>简体中文</code>并点击<code>install</code>安装简体中文语言包<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729998064919_%E5%88%9D%E5%A7%8B%E9%A1%B5%E9%9D%A2.png" alt="初始页面.png" loading="lazy"><br>安装成功后重启软件之后便变为中文操作页面，此时再次回到扩展页，在搜索栏搜索<code>C/C++</code>，分别安装VS Code对于C&#x2F;C++的编辑支持（语法补全纠正）与一个便捷调试输出的插件，如果未直接显示在左侧候选，请根据下图完整名字搜索<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729998354257_C%E8%AF%AD%E8%A8%80%E7%BC%96%E8%BE%91%E5%8A%9F%E8%83%BD1.png" alt="C语言编辑功能1.png" loading="lazy"><br><img src="https://telegraph-img-by-bot.pages.dev/file/1729998910982_C%E8%AF%AD%E8%A8%80%E7%BC%96%E8%BE%91%E5%8A%9F%E8%83%BD2.png" alt="C语言编辑功能2.png" loading="lazy"><br>在已安装中点击 <code>C/C++ Compile Run</code>的设置（齿轮图案）<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729999251556_%E7%BB%88%E7%AB%AF%E8%BE%93%E5%87%BA%E8%AE%BE%E7%BD%AE.png" alt="终端输出设置.png" loading="lazy"><br>下滑设置菜单，找到并勾选<br><code>C-cpp-compile-run: Run-in-external-terminal</code><br><code>□Whether should run in an external terminal</code><br>（使输出在外部弹出终端）<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729999466591_F6.png" alt="F6.png" loading="lazy"><br>如果你是按照上一步操作，此时已经是在设置页面，根据下图直接清空设置搜索栏便可打开VS Code编辑器设置，若未打开，可根据下图左下角方式打开<br><img src="https://telegraph-img-by-bot.pages.dev/file/1729999771480_%E8%AE%BE%E7%BD%AE.png" alt="设置.png" loading="lazy"><br>在搜索栏搜索<code>zoom</code>，根据需求打开选项，这几项是控制在编辑时放大缩小代码（边栏），VS Code在某些情况下并不是默认打开Ctrl+鼠标滚轮调整的功能<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730000018309_zoom.png" alt="zoom.png" loading="lazy"></p>
+<h1 id="C-C-编译器-MinGW-介绍与安装配置"><a href="#C-C-编译器-MinGW-介绍与安装配置" class="headerlink" title="C&#x2F;C++ 编译器 MinGW 介绍与安装配置"></a>C&#x2F;C++ 编译器 MinGW 介绍与安装配置</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>MinGW，即 Minimalist GNU For Windows。<em>它是一些头文件和端口库的集合，该集合允许人们在没有第三方动态链接库的情况下使用 GCC（GNU  Compiler C）产生 Windows32 程序</em>（介绍而已，还没到需要理解的阶段）</p>
+<p>实际上 MinGW 并不是一个 完全的C&#x2F;C++ 编译器，而是一套 GNU 工具集合。除开 GCC (GNU 编译器集合) 以外，MinGW 还包含有一些其他的 GNU 程序开发工具 (比如 gawk bison 等等)。</p>
+<blockquote>
+<p>提示：不同于集成在Dev-C++或者Code::Blocks内的编译器，MinGW内的编译器是作为一个单独的程序应用存在于计算机内，不仅是VS Code，通过相关配置同样能在其他编辑器内运行</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>MinGW-W64 可以去MinGW-w64的官网下载，也就可以直接去 MinGW-W64 的 GitHub 页面上下载。（因为在官网下载非常非常非常容易下错）</p>
+<blockquote>
+<p>GitHub是一个面向开源及私有软件项目的托管平台（全球最大），因为只支持Git作为唯一的版本库格式进行托管，故名GitHub。GitHub拥有1亿以上的开发人员，400万以上组织机构和3.3亿以上资料库。<br>GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。截止到2022-11-17，其注册用户已经超过9400万，托管版本数量也是非常之多，其中不乏知名开源项目Ruby on Rails、jQuery、python等。</p>
+</blockquote>
+<p>MinGW-W64下载链接：<a href="https://github.com/msys2/msys2-installer/releases/">Releases · msys2&#x2F;msys2-installer</a><br>如下图所示，选择<code>msys2-x86_64.exe</code>前缀+日期的Windows64位版本，点击下载。<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730001388426_github%E5%AE%89%E8%A3%85.png" alt="github安装.png" loading="lazy"></p>
+<p><code>此处以msys2-x86_64-20240727.exe为演示版本</code></p>
+<p>双击运行安装下载的程序<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730001657269_%E8%BF%90%E8%A1%8CMingw%E5%AE%89%E8%A3%85.png" alt="运行Mingw安装.png" loading="lazy"><br>初始界面直接点Next下一步<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730002212674_1.png" alt="1.png" loading="lazy"><br>确认安装位置（请预留10GB）<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730002208836_2.png" alt="2.png" loading="lazy"><br>确认快捷方式名称<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730002206868_3.png" alt="3.png" loading="lazy"><br>安装前建议断网，联网模式下会出现卡50%的可能<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730002208278_4.png" alt="4.png" loading="lazy"></p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>安装完成后运行程序会弹出该窗口右键，点击paste粘贴<code>pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain</code> 并回车，安装 MinGW-w64 工具链，<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730005162139_start.png" alt="start.png" loading="lazy"><br>出现这个界面，直接按回车键，默认接受所有的安装包。<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730005516312_%E7%A1%AE%E8%AE%A4%E5%8C%85.png" alt="确认包.png" loading="lazy"><br>当系统提示是否继续安装时，请输入<code>y</code>并回车。<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730005597104_Y.png" alt="Y.png" loading="lazy"><br>等待再弹出彩色的运行行时便下载完成<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730005690578_finish.png" alt="finish.png" loading="lazy"><br>打开安装 MSYS2 的目录，先找到<code>ucrt64</code>文件夹并进入，再找到<code>bin</code>文件夹并进入，然后在地址栏中，复制路径。</p>
+<p>如果一开始用默认路径，那路径就是<code>C:\msys64\ucrt64\bin</code>。复制安装路径<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730005822624_bin.png" alt="bin.png" loading="lazy"><br>然后在搜索框中输入 <code>编辑系统环境变量</code>，并打开编辑系统环境变量的设置界面。(或者右键此电脑点击属性后点击高级系统属性)<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730014052219_cmd2.png" alt="cmd2.png" loading="lazy"><br>如下图，系统属性点击环境变量→环境变量在环境变量一栏双击Path→新建环境变量→粘贴刚刚的安装目录→逐层保存<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730006172087_Path%E9%85%8D%E7%BD%AE.png" alt="Path配置.png" loading="lazy"></p>
+<p>恭喜你，现在你的计算机就拥有了全局的C&#x2F;C++编译环境，能做到这一步已经很厉害了啦。</p>
+<hr>
+<p>最后做一下测试，按组合键Win + r之后，输入<code>cmd</code>回车。</p>
+<p>回车之后，就可以调出 CMD 的终端窗口了，然后分别输入（CMD中右键即可粘贴）下面的命令，每输入一次命令后回车一次。</p>
+<p><code>gcc --version</code><br><code>g++ --version</code><br><code>gdb --version</code></p>
+<p>出现如下图一样的信息，就说明 C&#x2F;C++ 的编译环境已经安装好。<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730006474926_jieguo.png" alt="jieguo.png" loading="lazy"></p>
+<h1 id="在VS-Code开始写C语言代码吧！"><a href="#在VS-Code开始写C语言代码吧！" class="headerlink" title="在VS Code开始写C语言代码吧！"></a>在VS Code开始写C语言代码吧！</h1><p>在主界面资源管理器打开一个自己选定的文件夹作为代码的储存位置 <strong>（编译运行代码后会在根目录创建名为<code>.vscode</code>的文件夹存储这个文件夹内的编程配置）</strong></p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/1730007158270_%E6%96%87%E4%BB%B6%E5%A4%B9.png" alt="文件夹.png" loading="lazy"></p>
+<p>选中文件夹后，在新弹出的窗口中可能会弹出以下提示，勾选上<code>信任父文件夹&quot;Documents&quot;中所有文件的作者</code>，再点<code>是，我信任此作者</code>。（如果没有则忽略）</p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/1730014052551_cnm1.png" alt="cnm1.png" loading="lazy"></p>
+<p>在左上角创建第一个后缀名为<code>.c</code>的C语言源代码文件<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730007423977_%E6%96%87%E4%BB%B6.png" alt="文件.png" loading="lazy"></p>
+<p>然后就写我们需要的东西（我这里随便复制了一个源文件举例）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*</span><br><span class="line">描述</span><br><span class="line">斐波那契数列,又称黄金分割数列,指的是这样一个数列 0 1 1 2 3 5 8 13 21 …</span><br><span class="line">斐波那契数列中从第三项开始,每一项都等于前两项的和</span><br><span class="line">现输入一个整数N,请你输出这个序列的前N项,每项之间用空格隔开</span><br><span class="line">（非循环输入）  </span><br><span class="line">输入描述</span><br><span class="line">一个整数N(1&lt;=N&lt;=40</span><br><span class="line">输出描述</span><br><span class="line">在一行中输出斐波那契数列的前N项,两项之间用空格隔开</span><br><span class="line">*/</span><br><span class="line">#include&lt;stdio.h&gt; //头文件</span><br><span class="line">int main() //主函数</span><br><span class="line">&#123;</span><br><span class="line">    int a = 0,b = 1,n,zc; //定义几个变量，zc为暂存值</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;n); //输入函数</span><br><span class="line">    if( n &gt;= 1 &amp;&amp; n &lt;= 40 ) ////if函数</span><br><span class="line">        for(int m = 1;m &lt;= n;m++) //for 循环函数</span><br><span class="line">        &#123;</span><br><span class="line">            printf(&quot;%d &quot;,a);  //打印</span><br><span class="line">            zc = a;      </span><br><span class="line">            a = b;</span><br><span class="line">            b = zc + b; //赋值</span><br><span class="line">        &#125;;</span><br><span class="line">        return 0; // 返回值为 0（false）</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>书写完代码后，第一次编译在窗口栏点击运行<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730009860225_%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B0%83%E8%AF%95.png" alt="第一次调试.png" loading="lazy"><br>然后点击此项作为编译器进行调试编译（快捷键为<code>F5</code>)<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730010004174_%E8%B0%83%E8%AF%95%E5%90%AF%E5%8A%A8%EF%BC%81.png" alt="调试启动！.png" loading="lazy">运行后编辑器下半会弹出调试控制台进行编译然后显示终端显示输出结果<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730010355666_vscode%E5%86%85%E8%BE%93%E5%87%BA.png" alt="vscode内输出.png" loading="lazy"><br>回到编辑器内点击<code>F6</code>调试则是弹出CMD窗口输出<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730010352374_cmd.png" alt="cmd.png" loading="lazy"></p>
+<h2 id="断点调试"><a href="#断点调试" class="headerlink" title="断点调试"></a>断点调试</h2><p><em>由于时间问题，这一段未编辑的功能介绍，但是不影响基础教学</em></p>
+<h1 id="知识点补充之字符编码"><a href="#知识点补充之字符编码" class="headerlink" title="知识点补充之字符编码"></a>知识点补充之字符编码</h1><p>有一些同学会发现自己在自己电脑上编写代码后输出结果会出现如下的乱码问题，无论是在哪个软件上<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730011124230_%E4%B9%B1%E7%A0%81.png" alt="乱码.png" loading="lazy"><br>这涉及到计算机的另外一概念：字符编码，推荐观看此视频了解，这里不赘述过多。<br><a href="https://www.bilibili.com/video/BV1xP4y1J7CS">你懂乱码吗？锟斤拷烫烫烫（详解ASCII、Unicode、UTF-32、UTF-8编码)@林粒粒呀</a><br>我们知道常用的编码方式为课本上教过的ASCII编码，但是这种编码方式并不包括汉字，在我国计算机行业发展后编写了一套名为 GBK（两种更新版本名为 GB 2312 和GB 10830），中文为《信息交换用汉字编码字符集 基本集》，用于兼容ASCII显示汉字，但是就和GBK一样，许多国家都为自己的语言文字创造了各自的编码集，背后的占位代码互相冲突，打个比方，GBK无法和阿拉伯语编码兼容。<br>为了解决这个问题，统一码（Unicode），也叫万国码、单一码，由统一码联盟开发的旨在用一套编码方式兼容所有文字（emoji也包括在其中😋😪😭😖）的编码方式出现了，我们常用的Unicode类型为 UTF-8（UTF-16 UTF-32 所占位数不同）</p>
+<p><strong>为了尽可能提高兼容性，计算机编程中一般使用UTF-8编码进行编程</strong></p>
+<p>这里有两种常见的解决方法</p>
+<h2 id="①-文件本身的编码是否为UTF-8？"><a href="#①-文件本身的编码是否为UTF-8？" class="headerlink" title="① 文件本身的编码是否为UTF-8？"></a>① 文件本身的编码是否为UTF-8？</h2><p>如图在VS Code可点击通过底栏的编码显示修改保存文件<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730012260133_utf.png" alt="utf.png" loading="lazy"><br>保证编码方式为<strong>UTF-8</strong></p>
+<p>如果是非VS Code情况下可通过计算机自带的记事本另存为修改<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730012591650_notpad.png" alt="notpad.png" loading="lazy"><em>Windows 11需要点击更多选项</em><br><img src="https://telegraph-img-by-bot.pages.dev/file/1730012699479_notpad2.png" alt="notpad2.png" loading="lazy"><br><img src="https://telegraph-img-by-bot.pages.dev/file/1730012695261_notpad3.png" alt="notpad3.png" loading="lazy"></p>
+<h2 id="②计算机本身的CMD窗口输出编码为GB-2312"><a href="#②计算机本身的CMD窗口输出编码为GB-2312" class="headerlink" title="②计算机本身的CMD窗口输出编码为GB 2312"></a>②计算机本身的CMD窗口输出编码为GB 2312</h2><p>有一些版本的Windows操作系统默认编码为GB 2312，需要通过电脑设置进行修改，以下为Windows11设置<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730013011860_%E8%AF%AD%E8%A8%80%E8%AE%BE%E7%BD%AE.png" alt="语言设置.png" loading="lazy"><br><img src="https://telegraph-img-by-bot.pages.dev/file/1730013018199_%E8%AE%BE%E7%BD%AE%E6%88%90%E5%8A%9F.png" alt="设置成功.png" loading="lazy"></p>
+<hr>
+<p>将<code>Beta 版: 使用 Unicode UTF-8 提供全球语言支持</code>勾选后重启电脑，通过以上两种方式修改后再次调试编译运行，结果如图：<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730013458442_OK.png" alt="OK.png" loading="lazy"></p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>写完这篇东西，感觉自己半截入土了…….所以结尾就写不出什么了，<del>希望各位写代码快乐吧。</del><br>我是说，希望大家能够学习的越来越顺利😊<br>虽然还有点小瑕疵，等我先熬过这一遭再进行修改（闭眼）<br><img src="https://telegraph-img-by-bot.pages.dev/file/1730013728880_EE6BE7D40A2D2051DDE107665FE92D4A.jpg" alt="EE6BE7D40A2D2051DDE107665FE92D4A.jpg" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>计算机基础</tag>
+        <tag>C语言</tag>
+        <tag>VisualStudioCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>桂平市第一中学校史梗概</title>
     <url>/2022/08/21/%E6%A1%82%E5%B9%B3%E5%B8%82%E7%AC%AC%E4%B8%80%E4%B8%AD%E5%AD%A6%E6%A0%A1%E5%8F%B2%E6%A2%97%E6%A6%82/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><blockquote>
@@ -189,7 +304,7 @@
 <hr>
 <h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p><strong>百年一中，见证近代现代中国历史变迁，是真正的历史悠久，承载着千万学子的希冀，托起民族的栋梁，历史还在继续，我们需要继续书写</strong></p>
 <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>① 桂平人文：桂平市第一中学——树人漫漫百余年，校友悠悠话往昔 余年，校友悠悠话往昔<br><a href="https://baijiahao.baidu.com/s?id=1694166490809604649">https://baijiahao.baidu.com/s?id=1694166490809604649</a> (浔州府O鑫森淼焱垚)[2021-03-14 08:51 UTC+8]<br>②你好，桂平一中<a href="https://baijiahao.baidu.com/s?id=1693819804441092942">https://baijiahao.baidu.com/s?id=1693819804441092942</a> (关注广西身边事)[2021-03-10 13:00 UTC+8]<br>③ 桂平一中微信公众号</p>
-<h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><p>内容均来自网络资料与观点，如有错误欢迎通过<a href="mailto:&#x6a;&#x61;&#x79;&#109;&#117;&#x73;&#104;&#x75;&#105;&#64;&#x6f;&#x75;&#116;&#108;&#x6f;&#x6f;&#107;&#46;&#99;&#x6f;&#x6d;">&#x6a;&#x61;&#x79;&#109;&#117;&#x73;&#104;&#x75;&#105;&#64;&#x6f;&#x75;&#116;&#108;&#x6f;&#x6f;&#107;&#46;&#99;&#x6f;&#x6d;</a>或者左侧栏有关联系方式更正，涉及到校方需要的，将会立即删除。</p>
+<h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><p>内容均来自网络资料与观点，如有错误欢迎通过<a href="mailto:&#106;&#x61;&#x79;&#x6d;&#x75;&#x73;&#104;&#x75;&#105;&#x40;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#107;&#46;&#x63;&#111;&#x6d;">&#106;&#x61;&#x79;&#x6d;&#x75;&#x73;&#104;&#x75;&#105;&#x40;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#107;&#46;&#x63;&#111;&#x6d;</a>或者左侧栏有关联系方式更正，涉及到校方需要的，将会立即删除。</p>
 ]]></content>
       <categories>
         <category>纪要</category>
