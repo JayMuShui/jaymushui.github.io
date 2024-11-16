@@ -1,7 +1,7 @@
 ---
 title: Étude Pour les Petites Supercordes
 description: 
-author: JayMuShui
+author: 沐💌
 #email: jay342333892@163.com
 date: 2024-06-02 03:40:00
 updated: 2024-06-02 03:40:00
@@ -12,6 +12,11 @@ tags:
   - CLANNAD
   - 二次元
   - 一之濑琴美
+  - 番剧
+  - Galgames
+  - 人生观
+  - 青梅竹马
+  - 恋爱
 categories:
   - 感悟
 ---

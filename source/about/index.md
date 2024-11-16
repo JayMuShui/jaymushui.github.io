@@ -55,7 +55,7 @@ toc: true
 
 延伸到后面的轻小说，漫画，Galgame一大堆东西
 
-**目前主推[阿慈谷日富美 ](https://mzh.moegirl.org.cn/%E9%98%BF%E6%85%88%E8%B0%B7%E6%97%A5%E5%AF%8C%E7%BE%8E)，[风又音理](https://mzh.moegirl.org.cn/%E9%A3%8E%E5%8F%88%E9%9F%B3%E7%90%86)，[椎名真昼](https://zh.moegirl.org.cn/%E6%A4%8E%E5%90%8D%E7%9C%9F%E6%98%BC)和[黑塔](https://mzh.moegirl.org.cn/%E9%BB%91%E5%A1%94)**
+**目前主推[阿慈谷日富美 ](https://mzh.moegirl.org.cn/%E9%98%BF%E6%85%88%E8%B0%B7%E6%97%A5%E5%AF%8C%E7%BE%8E)，[风又音理](https://mzh.moegirl.org.cn/%E9%A3%8E%E5%8F%88%E9%9F%B3%E7%90%86)，[椎名真昼](https://zh.moegirl.org.cn/%E6%A4%8E%E5%90%8D%E7%9C%9F%E6%98%BC)和[黑塔](https://mzh.moegirl.org.cn/%E9%BB%91%E5%A1%94)**（听说你崩3.0准备出本体了？）
 
 当时看了许多漫剪视频，有尝试过使用Pr剪辑过两个视频发布，~~也就是自带的转场效果随便做的~~
 ①<https://www.bilibili.com/video/BV1vv411n7jp/>
@@ -76,3 +76,11 @@ toc: true
 # Planing
 
 *我也是懒成神人了*
+
+2028年？
+
+- 大厂实习经历→就业
+- 考研久叭唔尔遥遥带学研究生？
+- 考公？考教资？
+- ~~回家种田~~
+- [**Exit to Next Life**](https://www.baidu.com/s?wd=%E8%87%AA%E6%9D%80)

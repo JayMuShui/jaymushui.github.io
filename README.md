@@ -15,7 +15,7 @@
 ![meme](https://telegraph-img-by-bot.pages.dev/file/1729948880247_Vtb1_meme.jpg)
 
 2024-07-13 19:58:23(UTC+8) 
-配置了一下午Tags和Categories一直报错，才发现是自己他🐎主题config里面美指定这俩货对应内容的颜色，然后又不注释掉，一直报错，在此感谢小可爱LZK的扰乱心思让我想起来这回事
+配置了一下午Tags和Categories一直报错，才发现是自己他🐎主题config里面美指定这俩货对应内容的颜色，然后又不注释掉，一直报错，在此感谢~~小可爱LZK~~的扰乱心思让我想起来这回事
 
 ![meme](https://telegraph-img-by-bot.pages.dev/file/851571bbf626cef85ace1.jpg)
 

@@ -124,5 +124,5 @@ deploy:
   type: git
   repo: https://github.com/JayMuShui/jaymushui.github.io
   branch: master
-  message: 更新一篇VSCode与C/C++编译器安装教程 # 你可以自定义此次部署更新的说明
+  message: 更新2篇文章 # 你可以自定义此次部署更新的说明
 

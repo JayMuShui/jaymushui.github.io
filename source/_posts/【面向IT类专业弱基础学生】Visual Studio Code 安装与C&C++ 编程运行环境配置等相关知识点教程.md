@@ -10,8 +10,11 @@ hideTime: false
 comments: false
 tags:
   - 计算机基础
-  - C语言
   - VisualStudioCode
+  - 字符编码
+  - MinGW
+  - C语言
+  - C++
 categories:
   - 教程
 ---

@@ -6,7 +6,7 @@ language: zh-CN
 #通知栏
 notice:
   enable: true
-  content: ※置顶:我要回南方！这哈尔滨越来越难呆了！| 2024-10-26 20:59:51(UTC+8)
+  content: ※置顶:OK！北京时间2025年01月07日8:20长春龙嘉国际机场CGQ转南昌昌北国际机场KHN飞桂林双江国际机场KWL！| 2024-11-16 19:25:41(UTC+8)
 say:
   enable: true
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
