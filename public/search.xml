@@ -1,83 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>QQ原创表情简单加密算法与解密</title>
-    <url>/2024/11/15/QQ%E5%8E%9F%E5%88%9B%E8%A1%A8%E6%83%85%E7%AE%80%E5%8D%95%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B8%8E%E8%A7%A3%E5%AF%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="废话"><a href="#废话" class="headerlink" title="废话"></a>废话</h1><p>随着腾讯QQ的版本迭代，对于在其软件上的表情包保存限制越来越大，用户自定义的表情包直接可以保存到相册的功能被删除，用户可以通过以下方法：</p>
-<p>①通过<code>收藏</code>然后去收藏当中找到对应内容进行保存<br>②通过<code>用小程序打开</code>然后进行保存</p>
-<p>但是其QQ官方提供的表情包集（贴纸集）并不能进行此操作，静态的表情可以在对应缓存目录下直接复制出来使用，但是动态的GIF无法直接获得，研究了一下发现实际使用的文件是可预览的图片文件对应名字的无后缀名文件，但是并不能直接打开，会显示乱码，一通冲浪后，在<br>哔哩哔哩上发布于<code>UFC+8 2017-07-10 14:47:56</code>的  <a href="https://www.bilibili.com/video/BV1AxmUYTEL8">【教程】提取qq原创表情为gif</a>和其评论区中名为<a href="https://space.bilibili.com/619422">海馬</a>用户的评论中得到启发总结后并成功解密同时编写了一个简单的C++程序用于批量解密</p>
-<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>这里以哔哩哔哩UP主<a href="https://space.bilibili.com/274939213">明风OuO</a>（ 男 娘 武 器 库 ）的表情包为例</p>
-<p><img src="https://telegraph-img-by-bot.pages.dev/file/1731597689310_%E6%98%8E%E9%A3%8E_%E6%8B%BF%E5%BF%83%E5%BF%83.gif" alt="明风_拿心心.gif" loading="lazy"></p>
-<p>这个表情包在QQ缓存的无后缀文件用十六进制编辑器打开后前三行为<br><img src="https://telegraph-img-by-bot.pages.dev/file/1731598017540_example-QQ%E5%8A%A0%E5%AF%86%E5%90%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%A0%81%E6%98%BE%E7%A4%BA.png" alt="example-QQ加密后十六进制码显示.png" loading="lazy"></p>
-<span id="more"></span>
-
-<p>经过解密后能够正常显示时为</p>
-<p><img src="https://telegraph-img-by-bot.pages.dev/file/1731598023015_example-%E8%A7%A3%E5%AF%86%E5%90%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%A0%81%E6%98%BE%E7%A4%BA.png" alt="example-解密后十六进制码显示.png" loading="lazy"></p>
-<p><strong>因此，我们可以总结出以下规则：</strong><br><strong>腾讯QQ对缓存在data目录中的原创表情包为对应的无后缀文件，我们对当中对前<code>24</code>个字节当中的<code>偶数次序</code>字节转化为十六进制格式进行显示时，转化的十六进制数如果是<code>偶数</code>则在其基础上<code>+1</code>，如果是<code>奇数</code>则在其基础上<code>-1</code>，完成后重新保存便可正常显示，这便是解密的方式。</strong></p>
-<p>相反的，加密方式为对于一个正常显示的表情包文件在前<code>24</code>个字节上的<code>偶数次序</code>的<code>偶数</code>则在基础上<code>-1</code>，<code>奇数</code>则在基础上<code>+1</code>、</p>
-<h1 id="项目使用方式"><a href="#项目使用方式" class="headerlink" title="项目使用方式"></a>项目使用方式</h1><p>根据此原理，通过一个程序读取其相同目录下的文件提取其前24字节，按照原理的方式进行修改覆盖便可得到正常表情。</p>
-<h2 id="在手机QQ聊天框中发送所有你想要保存的表情包"><a href="#在手机QQ聊天框中发送所有你想要保存的表情包" class="headerlink" title="在手机QQ聊天框中发送所有你想要保存的表情包"></a>在手机QQ聊天框中发送所有你想要保存的表情包</h2><p>如图所示，这样才能在缓存目录中产生无后缀缓存文件<br><img src="https://telegraph-img-by-bot.pages.dev/file/1731598798639_1000049950.jpg" alt="1000049950.jpg" loading="lazy"></p>
-<h2 id="访问QQ对应的原创表情包缓存目录文件夹"><a href="#访问QQ对应的原创表情包缓存目录文件夹" class="headerlink" title="访问QQ对应的原创表情包缓存目录文件夹"></a>访问QQ对应的原创表情包缓存目录文件夹</h2><p>可通过MT管理器或者数据线连接PC并允许管理文件，找到<br><code>/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/MobileQQ/.emotionsm/</code></p>
-<p>您需要自行解决高版本安卓无法访问<code>data</code>&#x2F;<code>.emotionsm</code>文件夹需要取消隐藏的问题，然后按照时间顺序排序文件夹，找到对应表情包的编号文件夹，如下图所示的标红文件即是我们需要进行解密的文件，将其拷贝至PC内的文件夹</p>
-<p><img src="https://telegraph-img-by-bot.pages.dev/file/1731636209772_QQ%E5%8E%9F%E5%88%9B%E8%A1%A8%E6%83%85%E5%8C%85%E7%BC%93%E5%AD%98%E6%96%87%E4%BB%B6.png" alt="QQ原创表情包缓存文件.png" loading="lazy"></p>
-<h2 id="运行-decrypt-exe可执行文件"><a href="#运行-decrypt-exe可执行文件" class="headerlink" title="运行 [decrypt].exe可执行文件"></a>运行 [decrypt].exe可执行文件</h2><p>将这些文件复制到<code>[decrypt].exe</code>所在目录下运行即可自动提取字节修改覆写（会自动给新产生的文件添加上<code>.gif</code>后缀</p>
-<h1 id="❗注意"><a href="#❗注意" class="headerlink" title="❗注意"></a>❗注意</h1><p><code>[decrypt].exe</code>会将同一目录下除自身为所有的文件都进行在此程序不可逆单向的解密（按照上述规则），请确保是运行在没有其他重要文件的环境下并且对已经解密的文件再次运行则是会得到新的不可用的文件。</p>
-<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p>✨项目地址:<a href="https://github.com/JayMuShui/Encrypted-QQ-Original-Sticker-Decryption">https://github.com/JayMuShui/Encrypted-QQ-Original-Sticker-Decryption</a></p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>计算机实践</tag>
-        <tag>C++</tag>
-        <tag>编程</tag>
-        <tag>算法</tag>
-        <tag>加密</tag>
-        <tag>Hex</tag>
-        <tag>QQ</tag>
-        <tag>表情包</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《关于我在无意间被隔壁的天使变成废柴这件事》个人感想</title>
-    <url>/2023/01/18/%E3%80%8A%E5%85%B3%E4%BA%8E%E6%88%91%E5%9C%A8%E6%97%A0%E6%84%8F%E9%97%B4%E8%A2%AB%E9%9A%94%E5%A3%81%E7%9A%84%E5%A4%A9%E4%BD%BF%E5%8F%98%E6%88%90%E5%BA%9F%E6%9F%B4%E8%BF%99%E4%BB%B6%E4%BA%8B%E3%80%8B%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://zh.moegirl.org.cn/%E5%85%B3%E4%BA%8E%E6%88%91%E5%9C%A8%E6%97%A0%E6%84%8F%E9%97%B4%E8%A2%AB%E9%9A%94%E5%A3%81%E7%9A%84%E5%A4%A9%E4%BD%BF%E5%8F%98%E6%88%90%E5%BA%9F%E6%9F%B4%E8%BF%99%E4%BB%B6%E4%BA%8B">原名《お隣の天使様にいつの間にか駄目人間にされていた件》</a></p>
-<p><img src="https://telegraph-img-by-bot.pages.dev/file/b1d006176a6325921aa66.jpg" loading="lazy"><em>“天使大人”女主椎名真昼</em></p>
-<span id="more"></span>
-
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><strong>读完轻小说第一卷至第五卷，有些感想想要发表一下，仅个人主观感受，欢迎指正错误讨论。</strong></p>
-<p><img src="https://telegraph-img-by-bot.pages.dev/file/e23cfd333924411416b4d.jpg" loading="lazy"></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>作者佐伯さん是专门写互相暗恋的纯爱轻小说家，邻家天使作为日本业界纯爱类作品算不上十分优秀，但是非常具有模板性，剧情不拖沓，不胃疼，该上就上，萌动与纯情，高血糖，拒绝NTR。</p>
-<p>但这部作品也是对现实的一种写实，急功近利的恋爱，充满算计的友谊，血缘冷淡的亲情，抛开这种一般人没办法有的运气和家庭条件，以只索取或只满足他人而去自私（贬义）地喜欢。“天使”女主椎名真昼是人设完美的少女，遭受自私的告白困扰已久，同时家庭情况堪忧，封闭内心也只是为了独自承受，为了得到应有的爱而努力；男主藤宫周遭受所谓“友谊”的背叛，对人消极；男二赤泽树为女二白河千岁与家里的逆反与自我前途的协调麻烦事；门胁优太作为和女主差不多设定的“王子”，也受到各种追求的麻烦……</p>
-<p>或许和我们的青春不太符合，但我们的青春也同样充斥着各种人际问题与麻烦烦恼，如果没有如同男主周那般开明的家庭去引导，也可以通过朋友们、恋人们的相互救赎去书写青春。</p>
-<p>友情本质就是符合共同利益而存在的，不过这个共同利益甚至可以是“有人陪我聊天说笑”，利益本身就是中性词，何必默认理解成算计?大家共同维护，也许不能一辈子在一起，但也希望你能对珍视的友情尽力一把，让这段缘分与羁绊永远留在互相的记忆里面。</p>
-<p>无可奈何的是，爱情宝贵却总是廉价，究竟何为谨慎的选择恋人?对于没有谈过恋爱的人也许只有运气占主导，而大部分能够正确选择恋人的人几乎都是受过不少于一次的情伤，没办法，大家总是相信自己是少数人。</p>
-<p>所以不触碰所谓情才是明智之选，如果你问起我，我也建议你这样做；但是作为人，对于爱情的向往或多或少都会有一些，这时取决于你的想法，愿意赌一把吗？假设你坚定愿意去尝试“爱”，但是记住幸福是责任的副产物(罗翔语)，那我就折中建议一下，请先爱自己，做好自己，不要为了一个人改变自己的特性(不利于他人的缺点确实要改)，去爱一个自己真的想关心、呵护的人，这个人也因为自己的特质让你值得这样子做，不求回报，或许就能转化成一个同室的人，这是最纯粹的了。可能你会说，许多年后你我可能就被生活磨平棱角，需求欲望降低了，不会在意这么多激情与思绪，不过如果是基于这个认识来看这篇文章，又有什么必要呢，幼稚且理想主义？</p>
-<blockquote>
-<p>第六世达赖喇嘛·仓央嘉措言<br>“我问佛：‘如果遇到了可以爱的人，却又怕不能把握该怎么办？’佛曰：‘留人间多少爱，迎浮世千重变。和有情人，做快乐事，别问是劫是缘。’”</p>
-</blockquote>
-<p>回归本作，其实也无须思考这么多，很累也有点可笑，看看科幻片，看看美好的日常也不失是一种选择，看人家谈恋爱多舒服是吧，咱就是个破看二次元的死宅。</p>
-<h1 id="发癫时间"><a href="#发癫时间" class="headerlink" title="发癫时间"></a>发癫时间</h1><p><del>坏消息:动画版崩了，Project No.9稳定发病，低预算低质量，不如动态漫（想当年可是萝莉社，<a href="https://zh.moegirl.org.cn/%E9%BE%99%E7%8E%8B%E7%9A%84%E5%B7%A5%E4%BD%9C%EF%BC%81">龙王的工作！</a>就是他们的）。</del></p>
-<p>好消息:原作轻小说甜到我（咬紧后槽牙）（咬碎了）（大吼大叫）（翻来覆去）（锤床板）（痛哭）（被家人查询精神状态）（高血糖）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">见到周的神情变得明朗，真昼味味地笑着。这时周回过神，微妙地觉得难为情。</span><br><span class="line">「你真的很喜欢吃蛋」</span><br><span class="line">「嗯，喜欢呢」</span><br><span class="line">周点头肯定道。真昼已经完全摸清了周饮食方面的喜好，没必要对她有所隐瞒。</span><br></pre></td></tr></table></figure>
-
-
-<p><strong>六卷里面出现了13次“鸡蛋”＋37次“蛋卷”</strong>，我也喜欢真昼……不是，我也喜欢鸡蛋啊，为什么我没这福份，呜呜呜真昼只能存在于二次元了罢，那我要去二次元!!</p>
-<h1 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h1><p>前阵子去了澳门，花了将近HKD$600买了除了vol.6,7,9之外的东立出版的繁中小说，嗯，真的很不习惯右往左还是竖排的排版方式，还是繁体😭😭，所以只能买来收藏了QAQ</p>
-<p><img src="https://telegraph-img-by-bot.pages.dev/file/3d22036b3ef650a1a4281.jpg" alt="钱" loading="lazy"></p>
-]]></content>
-      <categories>
-        <category>感悟</category>
-      </categories>
-      <tags>
-        <tag>二次元</tag>
-        <tag>轻小说</tag>
-        <tag>关于我在无意间被隔壁的天使变成废柴这件事</tag>
-        <tag>椎名真昼</tag>
-        <tag>恋爱</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Étude Pour les Petites Supercordes</title>
     <url>/2024/06/02/%C3%89tude%20Pour%20les%20Petites%20Supercordes/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=22706984&auto=0&height=66"></iframe>
@@ -93,14 +16,14 @@
         <category>感悟</category>
       </categories>
       <tags>
-        <tag>二次元</tag>
-        <tag>恋爱</tag>
         <tag>CLANNAD</tag>
+        <tag>二次元</tag>
         <tag>一之濑琴美</tag>
         <tag>番剧</tag>
         <tag>Galgames</tag>
         <tag>人生观</tag>
         <tag>青梅竹马</tag>
+        <tag>恋爱</tag>
       </tags>
   </entry>
   <entry>
@@ -392,12 +315,89 @@
         <category>资源资料</category>
       </categories>
       <tags>
-        <tag>编程</tag>
-        <tag>算法</tag>
         <tag>TCS</tag>
         <tag>CodeVita</tag>
         <tag>计算机类竞赛</tag>
         <tag>题库</tag>
+        <tag>编程</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>QQ原创表情简单加密算法与解密</title>
+    <url>/2024/11/15/QQ%E5%8E%9F%E5%88%9B%E8%A1%A8%E6%83%85%E7%AE%80%E5%8D%95%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B8%8E%E8%A7%A3%E5%AF%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="废话"><a href="#废话" class="headerlink" title="废话"></a>废话</h1><p>随着腾讯QQ的版本迭代，对于在其软件上的表情包保存限制越来越大，用户自定义的表情包直接可以保存到相册的功能被删除，用户可以通过以下方法：</p>
+<p>①通过<code>收藏</code>然后去收藏当中找到对应内容进行保存<br>②通过<code>用小程序打开</code>然后进行保存</p>
+<p>但是其QQ官方提供的表情包集（贴纸集）并不能进行此操作，静态的表情可以在对应缓存目录下直接复制出来使用，但是动态的GIF无法直接获得，研究了一下发现实际使用的文件是可预览的图片文件对应名字的无后缀名文件，但是并不能直接打开，会显示乱码，一通冲浪后，在<br>哔哩哔哩上发布于<code>UTC+8 2017-07-10 14:47:56</code>的  <a href="https://www.bilibili.com/video/BV1AxmUYTEL8">【教程】提取qq原创表情为gif</a>和其评论区中名为<a href="https://space.bilibili.com/619422">海馬</a>用户的评论中得到启发总结后并成功解密同时编写了一个简单的C++程序用于批量解密</p>
+<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>这里以哔哩哔哩UP主<a href="https://space.bilibili.com/274939213">明风OuO</a>（ 男 娘 武 器 库 ）的表情包为例</p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/1731597689310_%E6%98%8E%E9%A3%8E_%E6%8B%BF%E5%BF%83%E5%BF%83.gif" alt="明风_拿心心.gif" loading="lazy"></p>
+<p>这个表情包在QQ缓存的无后缀文件用十六进制编辑器打开后前三行为<br><img src="https://telegraph-img-by-bot.pages.dev/file/1731598017540_example-QQ%E5%8A%A0%E5%AF%86%E5%90%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%A0%81%E6%98%BE%E7%A4%BA.png" alt="example-QQ加密后十六进制码显示.png" loading="lazy"></p>
+<span id="more"></span>
+
+<p>经过解密后能够正常显示时为</p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/1731598023015_example-%E8%A7%A3%E5%AF%86%E5%90%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%A0%81%E6%98%BE%E7%A4%BA.png" alt="example-解密后十六进制码显示.png" loading="lazy"></p>
+<p><strong>因此，我们可以总结出以下规则：</strong><br><strong>腾讯QQ对缓存在data目录中的原创表情包为对应的无后缀文件，我们对当中对前<code>24</code>个字节当中的<code>偶数次序</code>字节转化为十六进制格式进行显示时，转化的十六进制数如果是<code>偶数</code>则在其基础上<code>+1</code>，如果是<code>奇数</code>则在其基础上<code>-1</code>，完成后重新保存便可正常显示，这便是解密的方式。</strong></p>
+<p>相反的，加密方式为对于一个正常显示的表情包文件在前<code>24</code>个字节上的<code>偶数次序</code>的<code>偶数</code>则在基础上<code>-1</code>，<code>奇数</code>则在基础上<code>+1</code>、</p>
+<h1 id="项目使用方式"><a href="#项目使用方式" class="headerlink" title="项目使用方式"></a>项目使用方式</h1><p>根据此原理，通过一个程序读取其相同目录下的文件提取其前24字节，按照原理的方式进行修改覆盖便可得到正常表情。</p>
+<h2 id="在手机QQ聊天框中发送所有你想要保存的表情包"><a href="#在手机QQ聊天框中发送所有你想要保存的表情包" class="headerlink" title="在手机QQ聊天框中发送所有你想要保存的表情包"></a>在手机QQ聊天框中发送所有你想要保存的表情包</h2><p>如图所示，这样才能在缓存目录中产生无后缀缓存文件<br><img src="https://telegraph-img-by-bot.pages.dev/file/1731598798639_1000049950.jpg" alt="1000049950.jpg" loading="lazy"></p>
+<h2 id="访问QQ对应的原创表情包缓存目录文件夹"><a href="#访问QQ对应的原创表情包缓存目录文件夹" class="headerlink" title="访问QQ对应的原创表情包缓存目录文件夹"></a>访问QQ对应的原创表情包缓存目录文件夹</h2><p>可通过MT管理器或者数据线连接PC并允许管理文件，找到<br><code>/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/MobileQQ/.emotionsm/</code></p>
+<p>您需要自行解决高版本安卓无法访问<code>data</code>&#x2F;<code>.emotionsm</code>文件夹需要取消隐藏的问题，然后按照时间顺序排序文件夹，找到对应表情包的编号文件夹，如下图所示的标红文件即是我们需要进行解密的文件，将其拷贝至PC内的文件夹</p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/1731636209772_QQ%E5%8E%9F%E5%88%9B%E8%A1%A8%E6%83%85%E5%8C%85%E7%BC%93%E5%AD%98%E6%96%87%E4%BB%B6.png" alt="QQ原创表情包缓存文件.png" loading="lazy"></p>
+<h2 id="运行-decrypt-exe可执行文件"><a href="#运行-decrypt-exe可执行文件" class="headerlink" title="运行 [decrypt].exe可执行文件"></a>运行 [decrypt].exe可执行文件</h2><p>将这些文件复制到<code>[decrypt].exe</code>所在目录下运行即可自动提取字节修改覆写（会自动给新产生的文件添加上<code>.gif</code>后缀</p>
+<h1 id="❗注意"><a href="#❗注意" class="headerlink" title="❗注意"></a>❗注意</h1><p><code>[decrypt].exe</code>会将同一目录下除自身为所有的文件都进行在此程序不可逆单向的解密（按照上述规则），请确保是运行在没有其他重要文件的环境下并且对已经解密的文件再次运行则是会得到新的不可用的文件。</p>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p>✨项目地址:<a href="https://github.com/JayMuShui/Encrypted-QQ-Original-Sticker-Decryption">https://github.com/JayMuShui/Encrypted-QQ-Original-Sticker-Decryption</a></p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>算法</tag>
+        <tag>计算机实践</tag>
+        <tag>C++</tag>
+        <tag>加密</tag>
+        <tag>Hex</tag>
+        <tag>QQ</tag>
+        <tag>表情包</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《关于我在无意间被隔壁的天使变成废柴这件事》个人感想</title>
+    <url>/2023/01/18/%E3%80%8A%E5%85%B3%E4%BA%8E%E6%88%91%E5%9C%A8%E6%97%A0%E6%84%8F%E9%97%B4%E8%A2%AB%E9%9A%94%E5%A3%81%E7%9A%84%E5%A4%A9%E4%BD%BF%E5%8F%98%E6%88%90%E5%BA%9F%E6%9F%B4%E8%BF%99%E4%BB%B6%E4%BA%8B%E3%80%8B%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://zh.moegirl.org.cn/%E5%85%B3%E4%BA%8E%E6%88%91%E5%9C%A8%E6%97%A0%E6%84%8F%E9%97%B4%E8%A2%AB%E9%9A%94%E5%A3%81%E7%9A%84%E5%A4%A9%E4%BD%BF%E5%8F%98%E6%88%90%E5%BA%9F%E6%9F%B4%E8%BF%99%E4%BB%B6%E4%BA%8B">原名《お隣の天使様にいつの間にか駄目人間にされていた件》</a></p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/b1d006176a6325921aa66.jpg" loading="lazy"><em>“天使大人”女主椎名真昼</em></p>
+<span id="more"></span>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><strong>读完轻小说第一卷至第五卷，有些感想想要发表一下，仅个人主观感受，欢迎指正错误讨论。</strong></p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/e23cfd333924411416b4d.jpg" loading="lazy"></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>作者佐伯さん是专门写互相暗恋的纯爱轻小说家，邻家天使作为日本业界纯爱类作品算不上十分优秀，但是非常具有模板性，剧情不拖沓，不胃疼，该上就上，萌动与纯情，高血糖，拒绝NTR。</p>
+<p>但这部作品也是对现实的一种写实，急功近利的恋爱，充满算计的友谊，血缘冷淡的亲情，抛开这种一般人没办法有的运气和家庭条件，以只索取或只满足他人而去自私（贬义）地喜欢。“天使”女主椎名真昼是人设完美的少女，遭受自私的告白困扰已久，同时家庭情况堪忧，封闭内心也只是为了独自承受，为了得到应有的爱而努力；男主藤宫周遭受所谓“友谊”的背叛，对人消极；男二赤泽树为女二白河千岁与家里的逆反与自我前途的协调麻烦事；门胁优太作为和女主差不多设定的“王子”，也受到各种追求的麻烦……</p>
+<p>或许和我们的青春不太符合，但我们的青春也同样充斥着各种人际问题与麻烦烦恼，如果没有如同男主周那般开明的家庭去引导，也可以通过朋友们、恋人们的相互救赎去书写青春。</p>
+<p>友情本质就是符合共同利益而存在的，不过这个共同利益甚至可以是“有人陪我聊天说笑”，利益本身就是中性词，何必默认理解成算计?大家共同维护，也许不能一辈子在一起，但也希望你能对珍视的友情尽力一把，让这段缘分与羁绊永远留在互相的记忆里面。</p>
+<p>无可奈何的是，爱情宝贵却总是廉价，究竟何为谨慎的选择恋人?对于没有谈过恋爱的人也许只有运气占主导，而大部分能够正确选择恋人的人几乎都是受过不少于一次的情伤，没办法，大家总是相信自己是少数人。</p>
+<p>所以不触碰所谓情才是明智之选，如果你问起我，我也建议你这样做；但是作为人，对于爱情的向往或多或少都会有一些，这时取决于你的想法，愿意赌一把吗？假设你坚定愿意去尝试“爱”，但是记住幸福是责任的副产物(罗翔语)，那我就折中建议一下，请先爱自己，做好自己，不要为了一个人改变自己的特性(不利于他人的缺点确实要改)，去爱一个自己真的想关心、呵护的人，这个人也因为自己的特质让你值得这样子做，不求回报，或许就能转化成一个同室的人，这是最纯粹的了。可能你会说，许多年后你我可能就被生活磨平棱角，需求欲望降低了，不会在意这么多激情与思绪，不过如果是基于这个认识来看这篇文章，又有什么必要呢，幼稚且理想主义？</p>
+<blockquote>
+<p>第六世达赖喇嘛·仓央嘉措言<br>“我问佛：‘如果遇到了可以爱的人，却又怕不能把握该怎么办？’佛曰：‘留人间多少爱，迎浮世千重变。和有情人，做快乐事，别问是劫是缘。’”</p>
+</blockquote>
+<p>回归本作，其实也无须思考这么多，很累也有点可笑，看看科幻片，看看美好的日常也不失是一种选择，看人家谈恋爱多舒服是吧，咱就是个破看二次元的死宅。</p>
+<h1 id="发癫时间"><a href="#发癫时间" class="headerlink" title="发癫时间"></a>发癫时间</h1><p><del>坏消息:动画版崩了，Project No.9稳定发病，低预算低质量，不如动态漫（想当年可是萝莉社，<a href="https://zh.moegirl.org.cn/%E9%BE%99%E7%8E%8B%E7%9A%84%E5%B7%A5%E4%BD%9C%EF%BC%81">龙王的工作！</a>就是他们的）。</del></p>
+<p>好消息:原作轻小说甜到我（咬紧后槽牙）（咬碎了）（大吼大叫）（翻来覆去）（锤床板）（痛哭）（被家人查询精神状态）（高血糖）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">见到周的神情变得明朗，真昼味味地笑着。这时周回过神，微妙地觉得难为情。</span><br><span class="line">「你真的很喜欢吃蛋」</span><br><span class="line">「嗯，喜欢呢」</span><br><span class="line">周点头肯定道。真昼已经完全摸清了周饮食方面的喜好，没必要对她有所隐瞒。</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>六卷里面出现了13次“鸡蛋”＋37次“蛋卷”</strong>，我也喜欢真昼……不是，我也喜欢鸡蛋啊，为什么我没这福份，呜呜呜真昼只能存在于二次元了罢，那我要去二次元!!</p>
+<h1 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h1><p>前阵子去了澳门，花了将近HKD$600买了除了vol.6,7,9之外的东立出版的繁中小说，嗯，真的很不习惯右往左还是竖排的排版方式，还是繁体😭😭，所以只能买来收藏了QAQ</p>
+<p><img src="https://telegraph-img-by-bot.pages.dev/file/3d22036b3ef650a1a4281.jpg" alt="钱" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>感悟</category>
+      </categories>
+      <tags>
+        <tag>二次元</tag>
+        <tag>恋爱</tag>
+        <tag>轻小说</tag>
+        <tag>关于我在无意间被隔壁的天使变成废柴这件事</tag>
+        <tag>椎名真昼</tag>
       </tags>
   </entry>
   <entry>
@@ -532,7 +532,7 @@
 <hr>
 <h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p><strong>百年一中，见证近代现代中国历史变迁，是真正的历史悠久，承载着千万学子的希冀，托起民族的栋梁，历史还在继续，我们需要继续书写</strong></p>
 <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>① 桂平人文：桂平市第一中学——树人漫漫百余年，校友悠悠话往昔 余年，校友悠悠话往昔<br><a href="https://baijiahao.baidu.com/s?id=1694166490809604649">https://baijiahao.baidu.com/s?id=1694166490809604649</a> (浔州府O鑫森淼焱垚)[2021-03-14 08:51 UTC+8]<br>②你好，桂平一中<a href="https://baijiahao.baidu.com/s?id=1693819804441092942">https://baijiahao.baidu.com/s?id=1693819804441092942</a> (关注广西身边事)[2021-03-10 13:00 UTC+8]<br>③ 桂平一中微信公众号</p>
-<h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><p>内容均来自网络资料与观点，如有错误欢迎通过<a href="mailto:&#106;&#97;&#121;&#x6d;&#x75;&#115;&#104;&#117;&#x69;&#x40;&#111;&#117;&#116;&#108;&#x6f;&#x6f;&#107;&#x2e;&#99;&#x6f;&#x6d;">&#106;&#97;&#121;&#x6d;&#x75;&#115;&#104;&#117;&#x69;&#x40;&#111;&#117;&#116;&#108;&#x6f;&#x6f;&#107;&#x2e;&#99;&#x6f;&#x6d;</a>或者左侧栏有关联系方式更正，涉及到校方需要的，将会立即删除。</p>
+<h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><p>内容均来自网络资料与观点，如有错误欢迎通过<a href="mailto:&#106;&#x61;&#121;&#109;&#x75;&#x73;&#x68;&#x75;&#x69;&#64;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#109;">&#106;&#x61;&#121;&#109;&#x75;&#x73;&#x68;&#x75;&#x69;&#64;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#109;</a>或者左侧栏有关联系方式更正，涉及到校方需要的，将会立即删除。</p>
 ]]></content>
       <categories>
         <category>纪要</category>
