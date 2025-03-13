@@ -6,7 +6,7 @@ language: zh-CN
 #通知栏
 notice:
   enable: true
-  content: ※置顶:今年我要去广西壮族自治区梧州市/防城港市东兴市、广东省深圳市/东莞市/珠海市/广州市、辽宁省沈阳市、山东省青岛市、香港/澳门特别行政区、俄罗斯国哈巴罗夫斯克（伯力）等······ | (UTC+8)2025-02-21 01:45:12
+  content: ※置顶： Who am I ?| (UTC+8)2025-03-06 14:27:19
 say:
   enable: true
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
@@ -45,7 +45,7 @@ cursor:
   pointer: https://cdn.yunyoujun.cn/css/md-cursors/link.cur
   text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur  
 ###主页设置
-favicon: /favicon.ico #网页图标
+favicon: /favicon.svg #网页图标
 ##主题色
 mode: auto #黑白夜模式
 mourn:
