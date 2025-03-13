@@ -124,7 +124,7 @@ html.dark {
   --hty-secondary-text-color: #555;
   --post-block-bg-color: #fff;
   --smc-link-color: #e5aa82;
-  --yun-bg-image: url("https://2dcaf961.telegraph-image-2qa.pages.dev/file/6f397636d7cee1ad17a70.jpg");
+  --yun-bg-image: url("https://cloudflare-imgbed-telegraph.pages.dev/file/1741887074652_light_wallpaper.jpg");
   --banner-line-color: #000;
   --banner-char-color: #000;
 }
@@ -135,7 +135,7 @@ html.dark {
   --hty-secondary-text-color: #eee;
   --post-block-bg-color: #1b1f2e;
   --smc-link-color: #edc4a8;
-  --yun-bg-image: url("https://2dcaf961.telegraph-image-2qa.pages.dev/file/f4874c2bbc98f106d2e9b.jpg");
+  --yun-bg-image: url("https://cloudflare-imgbed-telegraph.pages.dev/file/1741887076819_dark_wallpaper.jpg");
   --banner-line-color: #fff;
   --banner-char-color: #fff;
   --banner-char-bg-color: rgba(0,0,0,0.5);
@@ -1822,7 +1822,7 @@ input {
   max-height: 10000px;
 }
 :root {
-  --sidebar-bg-image: url("https://telegraph-img-by-bot.pages.dev/file/56a21040acdf06a3b8ccc.jpg");
+  --sidebar-bg-image: url("https://cloudflare-imgbed-telegraph.pages.dev/file/56a21040acdf06a3b8ccc.jpg");
 }
 #menu-btn {
   display: none;

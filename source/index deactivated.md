@@ -80,10 +80,10 @@ QQ：1908582235
 ## 晒照（日常/Coser）
 
 
-![日常](https://telegraph-img-by-bot.pages.dev/file/f0ca78d3ffbf55685ee45.jpg)
+![日常](https://cloudflare-imgbed-telegraph.pages.dev/file/f0ca78d3ffbf55685ee45.jpg)
 
 ***
-![COSPLAY](https://telegraph-img-by-bot.pages.dev/file/87d86cf20081bb20f6321.jpg)
+![COSPLAY](https://cloudflare-imgbed-telegraph.pages.dev/file/87d86cf20081bb20f6321.jpg)
 
 ***
 ## 与我
@@ -102,7 +102,7 @@ QQ：1908582235
 <details>
 <summary>授权截图</summary>
 <p> 
-<img src="https://telegraph-img-by-bot.pages.dev/file/bf81b25e9cf07821cd4d7.jpg"/> 
+<img src="https://cloudflare-imgbed-telegraph.pages.dev/file/bf81b25e9cf07821cd4d7.jpg"/> 
 </p>
 </details>
 
@@ -170,7 +170,7 @@ EVA厨
 最近动态：
 **2024-06-15 8:00(UTC+8)** 发布于QQ空间的新作品 **单马尾初音未来** 
 
-![初音未来](https://telegraph-img-by-bot.pages.dev/file/86ca8ced0436b4c4ddf70.jpg)
+![初音未来](https://cloudflare-imgbed-telegraph.pages.dev/file/86ca8ced0436b4c4ddf70.jpg)
 
 
 >[QQ空间链接  隐私设置不可见其他](https://user.qzone.qq.com/3200406422)

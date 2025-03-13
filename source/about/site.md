@@ -10,7 +10,7 @@ toc: true
 
 ### 07-11 05:05:22(UTC+8) 
 
-成功Fork他人项目部署Cloudfare使用[Telegraph Image Hosting Service 图床（10.16重置版）](https://github.com/JayMuShui/Telegraph-Img-by-bot)并把所有存储在仓库的图像文件迁移到上面，成功加快访问速度！
+成功Fork他人项目部署Cloudfare使用[Telegraph Image Hosting Service 图床（2025-03-14重置版）](https://github.com/JayMuShui/CloudFlare-ImgBed-Telegraph)并把所有存储在仓库的图像文件迁移到上面，成功加快访问速度！
 
 ### 06-14 
 

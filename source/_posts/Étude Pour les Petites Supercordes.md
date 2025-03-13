@@ -27,7 +27,7 @@ categories:
 恍然二十年间轮过，这架空的平行世界与故事线像是被封装在这首以法语命名突兀的Étude Pour les Petites Supercordes，意为“小型超弦研究”的前沿物理学词汇作为ことみ(琴美)ちゃん(酱)的个人主题曲当中。
 ​旋律中总像是夕阳切入早已在变迁中改进消亡千禧年的建筑窗台下，阳光顺着图书室的大门推开撒入，嗅着纤维素与空气水反应挥发出的旧书清香，带入主角色视着性格单调的琴美酱沉浸于复杂隐晦高难的书籍当中略显呆滞感受时间之外的那种安适与平静感。
 
-![琴美](https://telegraph-img-by-bot.pages.dev/file/f585d5d249b6e63fa4bb3.png)​_图书馆里的小琴美_
+![琴美](https://cloudflare-imgbed-telegraph.pages.dev/file/f585d5d249b6e63fa4bb3.png)​_图书馆里的小琴美_
 
 <!-- more -->
 

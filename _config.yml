@@ -127,5 +127,5 @@ deploy:
   type: git
   repo: https://github.com/JayMuShui/jaymushui.github.io
   branch: master
-  message:  悄咪咪修改掉一些东西而已  # 你可以自定义此次部署更新的说明
+  message:  更新图源url，更换博客背景  # 你可以自定义此次部署更新的说明
 

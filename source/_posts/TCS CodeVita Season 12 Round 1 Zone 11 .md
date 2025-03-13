@@ -278,7 +278,7 @@ The calculator only has buttons for the digits 0-9 and the symbols +, -, *, ÷, 
 The arrangement of 7 segment display for each number from 0-9 and for the five mathematical operators is shown below.  
 0-9 每个数字和五个数学运算符的七段显示安排如下：
 
-![C-FaultySegmentimage1.png](https://telegraph-img-by-bot.pages.dev/file/1731754166820_C-FaultySegmentimage1.png)![C-FaultySegmentimage2.png](https://telegraph-img-by-bot.pages.dev/file/1731754166025_C-FaultySegmentimage2.png)![C-FaultySegmentimage3.png](https://telegraph-img-by-bot.pages.dev/file/1731754168279_C-FaultySegmentimage3.png)
+![C-FaultySegmentimage1.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754166820_C-FaultySegmentimage1.png)![C-FaultySegmentimage2.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754166025_C-FaultySegmentimage2.png)![C-FaultySegmentimage3.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754168279_C-FaultySegmentimage3.png)
 
 
 Given the equation that Gagan typed and the current display on the calculator, determine which character corresponds to the LED that should be toggled to make the equation correct.  
@@ -371,17 +371,17 @@ The bands will only bend at right angles. One band will intersect the other exac
 手环只会在直角处弯折。一只手环会与另一只手环正好在直角处相交，但它们在拐角处不会重叠。在交叉点处的字符表示哪只手环在上面，另一只手环在下面。为了避免混淆，手环不会相邻放置，它们之间会有一些空隙，即如果一根线是水平走向的，那么相邻的线在相邻的单元格不会是水平走向的，垂直方向也是如此。下面的图片展示了手环不相互缠绕的情况。
 
 
-![D-Bandsimage1.png](https://telegraph-img-by-bot.pages.dev/file/1731754166783_D-Bandsimage1.png)
+![D-Bandsimage1.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754166783_D-Bandsimage1.png)
 
 Now, instead, it would look like below...
 相反，它看起来会像下面这样……
 
-![D-Bandsimage2.png](https://telegraph-img-by-bot.pages.dev/file/1731754172331_D-Bandsimage2.png)
+![D-Bandsimage2.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754172331_D-Bandsimage2.png)
 
 The image below is an example of the case and the bands inside it.
 下面的图片是这种情况和里面手环的一个示例。
 
-![D-Bandsimage3.png](https://telegraph-img-by-bot.pages.dev/file/1731754172033_D-Bandsimage3.png)
+![D-Bandsimage3.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754172033_D-Bandsimage3.png)
 
 Help the friends choose a case with non - interlocked bands i.e., check whether the given case with bands can be separated without cutting one of the bands.
 帮助朋友们选择没有相互缠绕的手环对，即检查给定的手环对是否可以在不剪断其中一个手环的情况下分开。
@@ -425,7 +425,7 @@ The image below depicts the input described above.
 
 下图描述了上述输入。
 
-![D-Bandsimage4.png](https://telegraph-img-by-bot.pages.dev/file/1731754178318_D-Bandsimage4.png)
+![D-Bandsimage4.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754178318_D-Bandsimage4.png)
 
 
 From the image it is easy to see that the two bands cannot be separated without cutting any one of it. Hence print Impossible.
@@ -453,7 +453,7 @@ The image below depicts the input described above.
 
 下图描述了上述输入。
 
-![D-Bandsimage5.png](https://telegraph-img-by-bot.pages.dev/file/1731754176365_D-Bandsimage5.png)
+![D-Bandsimage5.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754176365_D-Bandsimage5.png)
 
 
 The band 1 is just placed above the band 2. They are not interlocked and can be separated without cutting. Since they are overlapping at two positions, the output is 2.
@@ -488,7 +488,7 @@ The image below depicts the input described above.
 
 下图描述了上述输入。
 
-![D-Bandsimage6.png](https://telegraph-img-by-bot.pages.dev/file/1731754175394_D-Bandsimage6.png)
+![D-Bandsimage6.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754175394_D-Bandsimage6.png)
 
 The band 1 is just placed above the band 2. They are not interlocked and can be separated without cutting. Since they are overlapping at two positions, the output is 2.
 手环1正好在手环2的上方。它们没有相互缠绕，可以不剪断就分开。由于它们在两个位置重叠，所以输出是2。
@@ -526,7 +526,7 @@ Now, the intensity of the star = minimum (the number of cells these 3 lines are 
 So, the intensity of this star will be 1.
 所以，这颗星星的强度将是1。
 
-![E-MagicStarsIntensityimage1.png](https://telegraph-img-by-bot.pages.dev/file/1731754180761_E-MagicStarsIntensityimage1.png)_杆在2D平面中的位置_
+![E-MagicStarsIntensityimage1.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754180761_E-MagicStarsIntensityimage1.png)_杆在2D平面中的位置_
 
 ### Case 2 - The line is two sides to the star i.e., the star cuts the line into two parts.
 ### 情况2 - 这条线在星星的两侧，即星星把线分成两部分。
@@ -538,7 +538,7 @@ In this case, the intensity of the star = minimum (the number of cells these 3 l
 在这种情况下，星星的强度 = 最小值（这三条线从星星形成点到最后在两侧接触的方格数）= 最小值(1, 1, 2, 2, 3, 2) = 1。
 
 
-![E-MagicStarsIntensityimage2.png](https://telegraph-img-by-bot.pages.dev/file/1731754180218_E-MagicStarsIntensityimage2.png)_杆在2D平面中的位置_
+![E-MagicStarsIntensityimage2.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754180218_E-MagicStarsIntensityimage2.png)_杆在2D平面中的位置_
 
 Given N lines and the type of star for which you need to calculate the intensity, calculate the intensity for all such stars according to the cases described and print their total sum. If no stars of the specified type are present, print 0.
 给定N条线和你需要计算强度的星星类型，根据所描述的情况计算所有这种星星的强度并打印出它们的总和。如果没有指定类型的星星存在，打印0。
@@ -587,7 +587,7 @@ Print a single integer representing the total intensity of all stars of the spec
 The lines given in the above input are represented in the below figure.
 上述输入中的线条在下图中表示。
 
-![E-MagicStarsIntensityimage4.png](https://telegraph-img-by-bot.pages.dev/file/1731754179712_E-MagicStarsIntensityimage4.png)_杆在2D平面中的位置_
+![E-MagicStarsIntensityimage4.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754179712_E-MagicStarsIntensityimage4.png)_杆在2D平面中的位置_
 
 There are two 2 - stars formed at the positions (5, 5) and (7, 7). The intensity of the star at (5, 5) is minimum(4, 3, 3, 4) which is 3 and the intensity of the star at (7, 7) is minimum(1, 1, 2, 6) which is 1. So, the total intensity of all 2 - stars will be 3 + 1 = 4.
 在位置(5, 5)和(7, 7)形成了两个2 -星。在(5, 5)处星星的强度是最小值(4, 3, 3, 4)即3，在(7, 7)处星星的强度是最小值(1, 1, 2, 6)即1。所以，所有2 -星的总强度是3 + 1 = 4。
@@ -614,7 +614,7 @@ For example, consider “0 0 xy”
 The above input means that card’s bottom - left corner is positioned at (0, 0) in the xy - plane. This square can be represented by the coordinates (0, 0), (0, 1), (1, 0), and (1, 1).
 上述输入意味着卡片的左下角在xy平面中的位置是(0, 0)。这个正方形可以由坐标(0, 0)、(0, 1)、(1, 0)和(1, 1)表示。
 
-![F-CardBoximage1.png](https://telegraph-img-by-bot.pages.dev/file/1731754178015_F-CardBoximage1.png)
+![F-CardBoximage1.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754178015_F-CardBoximage1.png)
 
 The X - axis is shown in red, the Y - axis in green, and the Z - axis in blue.
 X轴用红色表示，Y轴用绿色表示，Z轴用蓝色表示。
@@ -622,12 +622,12 @@ X轴用红色表示，Y轴用绿色表示，Z轴用蓝色表示。
 For the coordinates “0 0 yz”, it can be interpreted as (0, 0), (0, 1), (1, 0), and (1, 1). The representation of the same is shown below.
 对于坐标“0 0 yz”，可以解释为(0, 0)、(0, 1)、(1, 0)和(1, 1)，其表示如下所示。
 
-![F-CardBoximage2.png]https://telegraph-img-by-bot.pages.dev/file/1731754177843_F-CardBoximage2.png)
+![F-CardBoximage2.png]https://cloudflare-imgbed-telegraph.pages.dev/file/1731754177843_F-CardBoximage2.png)
 
 Likewise, for the coordinates “0 0 zx”, it can be interpreted as (0, 0), (1, 0), (0, 1), and (1, 1), which is shown in the below.
 同样，对于坐标“0 0 zx”，可以解释为(0, 0)、(1, 0)、(0, 1)和(1, 1)，如下所示。
 
-![F-CardBoximage3.png](https://telegraph-img-by-bot.pages.dev/file/1731754178108_F-CardBoximage3.png)
+![F-CardBoximage3.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754178108_F-CardBoximage3.png)
 
 Assume Chintu either built a closed box or is at most one card short to make it a closed one. In either case, it will be a single - compartment i.e., he will not place cards such that it will dissect the space inside the boxed compartment. Given how Chintu placed the cards find and print output as mentioned below.
 假设Chintu要么构建了一个封闭的盒子，要么最多差一张卡片就能使其封闭。在任何一种情况下，它都将是一个单室结构，即他不会放置会分割盒内空间的卡片。根据Chintu放置卡片的方式，找到并按如下所述打印输出。
@@ -683,7 +683,7 @@ Placing cards as given input will look like below.
 
 Placing cards as given input will looks like below.
 将卡片作为给定的输入放置如下所示
-![F-CardBoximage4.png](https://telegraph-img-by-bot.pages.dev/file/1731754177012_F-CardBoximage4.png)
+![F-CardBoximage4.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754177012_F-CardBoximage4.png)
 
 As we can see, the box is closed, and its capacity is 2 unit cubes, hence print 2.
 如我们所见，盒子是封闭的，其体积为2单位立方体，因此打印2。
@@ -710,7 +710,7 @@ As we can see, the box is closed, and its capacity is 2 unit cubes, hence print 
 
 Placing cards as given input will looks like below.
 将卡片作为给定的输入放置如下所示
-![F-CardBoximage5.png](https://telegraph-img-by-bot.pages.dev/file/1731754180994_F-CardBoximage5.png)
+![F-CardBoximage5.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731754180994_F-CardBoximage5.png)
 
 As you can see that one card is missing at the top. A card needs to be placed which should cover (1, 0, 1), (2, 0, 1), (1, 1, 0) and (2, 1, 0) and it should be parallel to xy - plane. Hence that card needs to be placed on 1 0 1 xy.
 如你所见，顶部缺少一张卡片。需要放置一张应覆盖(1, 0, 1)、(2, 0, 1)、(1, 1, 0)和(2, 1, 0)且平行于xy平面的卡片。因此，需要放置的卡片坐标是1 0 1 xy。

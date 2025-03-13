@@ -35,17 +35,17 @@ categories:
 
 
 
-![明风_拿心心.gif](https://telegraph-img-by-bot.pages.dev/file/1731597689310_明风_拿心心.gif)
+![明风_拿心心.gif](https://cloudflare-imgbed-telegraph.pages.dev/file/1731597689310_明风_拿心心.gif)
 
 
 这个表情包在QQ缓存的无后缀文件用十六进制编辑器打开后前三行为
-![example-QQ加密后十六进制码显示.png](https://telegraph-img-by-bot.pages.dev/file/1731598017540_example-QQ加密后十六进制码显示.png)
+![example-QQ加密后十六进制码显示.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731598017540_example-QQ加密后十六进制码显示.png)
 
 <!-- more -->
 
 经过解密后能够正常显示时为
 
-![example-解密后十六进制码显示.png](https://telegraph-img-by-bot.pages.dev/file/1731598023015_example-解密后十六进制码显示.png)
+![example-解密后十六进制码显示.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731598023015_example-解密后十六进制码显示.png)
 
 
 **因此，我们可以总结出以下规则：**
@@ -65,7 +65,7 @@ categories:
 
 ## 在手机QQ聊天框中发送所有你想要保存的表情包
 如图所示，这样才能在缓存目录中产生无后缀缓存文件
-![1000049950.jpg](https://telegraph-img-by-bot.pages.dev/file/1731598798639_1000049950.jpg)
+![1000049950.jpg](https://cloudflare-imgbed-telegraph.pages.dev/file/1731598798639_1000049950.jpg)
 ## 访问QQ对应的原创表情包缓存目录文件夹
 
 可通过MT管理器或者数据线连接PC并允许管理文件，找到
@@ -74,7 +74,7 @@ categories:
 
 您需要自行解决高版本安卓无法访问`data`/`.emotionsm`文件夹需要取消隐藏的问题，然后按照时间顺序排序文件夹，找到对应表情包的编号文件夹，如下图所示的标红文件即是我们需要进行解密的文件，将其拷贝至PC内的文件夹
 
-![QQ原创表情包缓存文件.png](https://telegraph-img-by-bot.pages.dev/file/1731636209772_QQ原创表情包缓存文件.png)
+![QQ原创表情包缓存文件.png](https://cloudflare-imgbed-telegraph.pages.dev/file/1731636209772_QQ原创表情包缓存文件.png)
 
 
 
