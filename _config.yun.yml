@@ -103,7 +103,7 @@ fireworks: #烟花
 
 ##侧边栏
 sidebar:
-  bg_image: https://cloudflare-imgbed-telegraph.pages.dev/file/56a21040acdf06a3b8ccc.jpg
+  bg_image: https://cloudflare-imgbed-telegraph.pages.dev/file/Neri_Draw.jpg
   bg_position: bottom 0rem center
   tagcloud:
     enable: false
