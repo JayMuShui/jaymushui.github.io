@@ -21,9 +21,11 @@ categories:
 
 原题集~~（总有一天我会写出来的！）~~
 
+
 全文中英文对照
 ALL PAGES IN ENGLISH AND SIMPLIFED CHINESE 🇨🇳
 
+<!-- more -->
 
 # Q.A DanceRev
 
@@ -39,8 +41,6 @@ The core games involve placing your feet on certain tiles according to the instr
 Here you will have four tiles: `up`, `down`, `right`, and `left`. You can move your leg one at a time. Initially, you can place your feet on any tile. Instructions will contain the list of tiles, where you must place one of your feet, one instruction after another.  
 
 在这个游戏里，设有`上` `下` `右` `左`四个方块。玩家每次可以移动一条腿，一开始，脚可以放在任意一个方块上。指令会罗列出方块的相关信息，玩家需要依照顺序将脚依次放在这些方块上。
-
-<!-- more -->
 
 Given the instruction to place your feet, find the minimum number of times you must move your legs to different tiles following the instruction. You can start with placing your legs at any position.  
 

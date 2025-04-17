@@ -127,5 +127,5 @@ deploy:
   type: git
   repo: https://github.com/JayMuShui/jaymushui.github.io
   branch: master
-  message:  更新技术文章和尝试通过重新部署的方式解决某文章无法打开的bug  # 你可以自定义此次部署更新的说明
+  message:  更新一篇随笔  # 你可以自定义此次部署更新的说明
 
