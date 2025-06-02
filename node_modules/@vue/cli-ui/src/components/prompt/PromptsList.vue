@@ -8,15 +8,14 @@
       >
         <div v-if="group.id" class="group-name">{{ $t(group.id) }}</div>
 
-        <template v-for="prompt of group.prompts">
-          <component
-            v-if="prompt.visible"
-            :key="prompt.id"
-            :is="getModule(prompt)"
-            :prompt="prompt"
-            @answer="value => $emit('answer', { prompt, value })"
-          />
-        </template>
+        <component
+          v-for="prompt of group.prompts"
+          v-if="prompt.visible"
+          :key="prompt.id"
+          :is="getModule(prompt)"
+          :prompt="prompt"
+          @answer="value => $emit('answer', { prompt, value })"
+        />
       </div>
 
       <div v-if="!prompts.length" class="vue-ui-empty">

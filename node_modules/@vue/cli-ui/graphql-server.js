@@ -8,10 +8,6 @@ const { ApolloServer, gql } = require('apollo-server-express')
 const { PubSub } = require('graphql-subscriptions')
 const merge = require('deepmerge')
 
-const { SubscriptionServer } = require('subscriptions-transport-ws')
-const { makeExecutableSchema } = require('@graphql-tools/schema')
-const { execute, subscribe } = require('graphql')
-
 function defaultValue (provided, value) {
   return provided == null ? value : provided
 }
@@ -23,7 +19,7 @@ function autoCall (fn, ...context) {
   return fn
 }
 
-module.exports = async (options, cb = null) => {
+module.exports = (options, cb = null) => {
   // Default options
   options = merge({
     integratedEngine: false
@@ -31,7 +27,6 @@ module.exports = async (options, cb = null) => {
 
   // Express app
   const app = express()
-  const httpServer = http.createServer(app)
 
   // Customize those files
   let typeDefs = load(options.paths.typeDefs)
@@ -69,16 +64,12 @@ module.exports = async (options, cb = null) => {
 
   typeDefs = processSchema(typeDefs)
 
-  // eslint-disable-next-line prefer-const
-  let subscriptionServer
-
   let apolloServerOptions = {
     typeDefs,
     resolvers,
     schemaDirectives,
     dataSources,
     tracing: true,
-    cache: 'bounded',
     cacheControl: true,
     engine: !options.integratedEngine,
     // Resolvers context from POST
@@ -98,15 +89,23 @@ module.exports = async (options, cb = null) => {
       return contextData
     },
     // Resolvers context from WebSocket
-    plugins: [{
-      async serverWillStart () {
-        return {
-          async drainServer () {
-            subscriptionServer.close()
-          }
+    subscriptions: {
+      path: options.subscriptionsPath,
+      onConnect: async (connection, websocket) => {
+        let contextData = {}
+        try {
+          contextData = await autoCall(context, {
+            connection,
+            websocket
+          })
+          contextData = Object.assign({}, contextData, { pubsub })
+        } catch (e) {
+          console.error(e)
+          throw e
         }
+        return contextData
       }
-    }]
+    }
   }
 
   // Automatic mocking
@@ -148,37 +147,6 @@ module.exports = async (options, cb = null) => {
   // Apollo Server
   const server = new ApolloServer(apolloServerOptions)
 
-  const schema = makeExecutableSchema({
-    typeDefs: apolloServerOptions.typeDefs,
-    resolvers: apolloServerOptions.resolvers,
-    schemaDirectives: apolloServerOptions.schemaDirectives
-  })
-
-  subscriptionServer = SubscriptionServer.create({
-    schema,
-    execute,
-    subscribe,
-    onConnect: async (connection, websocket) => {
-      let contextData = {}
-      try {
-        contextData = await autoCall(context, {
-          connection,
-          websocket
-        })
-        contextData = Object.assign({}, contextData, { pubsub })
-      } catch (e) {
-        console.error(e)
-        throw e
-      }
-      return contextData
-    }
-  }, {
-    server: httpServer,
-    path: options.subscriptionsPath
-  })
-
-  await server.start()
-
   // Express middleware
   server.applyMiddleware({
     app,
@@ -191,7 +159,9 @@ module.exports = async (options, cb = null) => {
   })
 
   // Start server
+  const httpServer = http.createServer(app)
   httpServer.setTimeout(options.timeout)
+  server.installSubscriptionHandlers(httpServer)
 
   httpServer.listen({
     host: options.host || 'localhost',

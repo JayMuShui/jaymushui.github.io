@@ -37,7 +37,16 @@ module.exports = cli => {
         name: 'ESLint + Prettier',
         value: 'prettier',
         short: 'Prettier'
-      }
+      },
+      ...(
+        answers.features.includes('ts')
+          ? [{
+            name: `TSLint (deprecated)`,
+            value: 'tslint',
+            short: 'TSLint'
+          }]
+          : []
+      )
     ]
   })
 
@@ -60,7 +69,7 @@ module.exports = cli => {
   })
 
   cli.onPromptComplete((answers, options) => {
-    if (answers.features.includes('linter')) {
+    if (answers.features.includes('linter') && answers.eslintConfig !== 'tslint') {
       options.plugins['@vue/cli-plugin-eslint'] = {
         config: answers.eslintConfig,
         lintOn: answers.lintOn

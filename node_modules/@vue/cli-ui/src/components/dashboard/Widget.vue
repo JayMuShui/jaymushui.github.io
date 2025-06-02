@@ -24,7 +24,8 @@
               <!-- Custom actions -->
               <template v-if="widget.configured">
                 <VueButton
-                  v-for="action of visibleHeaderActions"
+                  v-for="action of headerActions"
+                  v-if="!action.hidden"
                   :key="action.id"
                   :icon-left="action.icon"
                   :disabled="action.disabled"
@@ -295,10 +296,6 @@ export default {
         return this.widget.definition.detailsComponent
       }
       return this.widget.definition.component
-    },
-
-    visibleHeaderActions () {
-      return this.headerActions.filter(action => !action.hidden)
     }
   },
 

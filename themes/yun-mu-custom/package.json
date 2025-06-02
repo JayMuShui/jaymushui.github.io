@@ -1,0 +1,33 @@
+{
+  "name": "hexo-theme-yun-mu-custom",
+  "version": "1.0.0-base-on-1.10.11",
+  "description": "☁️ A fast & light & lovely theme for Hexo. Customized by Mu.",
+  "keywords": [
+    "hexo",
+    "theme",
+    "yun",
+    "yun-mu-custom"
+  ],
+  "license": "MIT",
+  "author": "YunYouJun <me@yunyoujun.cn>, Customized by Mu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/hexo-theme-yun.git"
+  },
+  "homepage": "https://yun.yunyoujun.cn",
+  "bugs": {
+    "url": "https://github.com/YunYouJun/hexo-theme-yun/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "languages",
+    "layout",
+    "scripts",
+    "source",
+    "src",
+    "_config.yml",
+    "_vendors.yml"
+  ]
+}

@@ -90,14 +90,9 @@ export default {
     ]),
 
     finalDasharray () {
-      if (
-        this.finalDashoffset === 0 ||
-        this.finalDashoffset === this.dasharray * 2
-      ) {
-        return 0
-      }
-
-      return this.dasharray
+      return (this.finalDashoffset === 0 ||
+        this.finalDashoffset === this.dasharray * 2)
+        ? 0 : this.dasharray
     },
 
     finalDashoffset () {

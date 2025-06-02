@@ -14,24 +14,14 @@ module.exports = function extendJSConfig (value, source) {
         node.left.object.name === 'module' &&
         node.left.property.name === 'exports'
       ) {
-        let theExports = node.right
-        if (
-          theExports.type === 'CallExpression' &&
-          theExports.callee.type === 'Identifier' &&
-          theExports.callee.name === 'defineConfig'
-        ) {
-          theExports = theExports.arguments[0]
-        }
-
-        if (theExports.type === 'ObjectExpression') {
-          augmentExports(theExports)
-        } else if (theExports.type === 'Identifier') {
+        if (node.right.type === 'ObjectExpression') {
+          augmentExports(node.right)
+        } else if (node.right.type === 'Identifier') {
           // do a second pass
-          exportsIdentifier = theExports.name
+          exportsIdentifier = node.right.name
         }
         return false
       }
-
       this.traverse(path)
     }
   })

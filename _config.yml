@@ -20,11 +20,7 @@ keywords:
  - 博客
 author: JayMuShui | 沐
 language: 
-- zh-CN
-- zh-TW
-- zh-HK
-- en
-- ja
+ - zh-CN
 
 timezone: Asia/Shanghai
 
@@ -58,7 +54,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -112,7 +108,7 @@ ignore:
 # Extensions/扩展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yun
+theme: yun-mu-custom
 
 #Display/播放器
 aplayer:
@@ -127,5 +123,5 @@ deploy:
   type: git
   repo: https://github.com/JayMuShui/jaymushui.github.io
   branch: master
-  message:  更新自我介绍页面的链接与内容  # 你可以自定义此次部署更新的说明
+  message:  进入归档模式，由Hexo迁移至Valaxy框架前的最后一次Hexo部署（感谢Hexo框架支持的这三年）  # 你可以自定义此次部署更新的说明
 

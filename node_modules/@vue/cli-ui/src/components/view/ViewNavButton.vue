@@ -1,11 +1,11 @@
 <template>
   <div class="project-nav-button">
-    <v-tooltip
+    <v-popover
       trigger="hover"
       handle-resize
-      class="force-tooltip"
+      popover-class="force-tooltip"
       placement="right"
-      :offset="[0, 4]"
+      offset="4"
       :delay="{ show: 300, hide: 0 }"
     >
       <VueGroupButton
@@ -27,10 +27,10 @@
         <span v-if="$responsive.wide" class="label">{{ $t(view.tooltip) }}</span>
       </VueGroupButton>
 
-      <template slot="popper">
+      <template slot="popover">
         <div class="title">{{ $t(view.tooltip) }}</div>
 
-        <div v-if="badges.length" class="badges">
+        <div v-if="badges" class="badges">
           <ViewBadge
             v-for="badge of badges"
             :key="badge.id"
@@ -38,7 +38,7 @@
           />
         </div>
       </template>
-    </v-tooltip>
+    </v-popover>
 
     <div
       v-if="firstNotHiddenBadge"
@@ -66,8 +66,6 @@ export default {
       if (this.view.badges && this.view.badges.length) {
         return this.view.badges.slice().sort((a, b) => b.priority - a.priority)
       }
-
-      return []
     },
 
     firstNotHiddenBadge () {
@@ -95,9 +93,6 @@ $bg-dark = $vue-ui-color-dark
 
 .project-nav-button
   position relative
-
-  .force-tooltip
-    width 100%
 
   .bullet
     position absolute

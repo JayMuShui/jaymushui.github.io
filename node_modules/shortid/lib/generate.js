@@ -2,7 +2,7 @@
 
 var alphabet = require('./alphabet');
 var random = require('./random/random-byte');
-var format = require('nanoid/format');
+var customRandom = require('nanoid').customRandom;
 
 function generate(number) {
     var loopCounter = 0;
@@ -11,7 +11,7 @@ function generate(number) {
     var str = '';
 
     while (!done) {
-        str = str + format(random, alphabet.get(), 1);
+        str = str + customRandom(alphabet.get(), 1, random)();
         done = number < (Math.pow(16, loopCounter + 1 ) );
         loopCounter++;
     }

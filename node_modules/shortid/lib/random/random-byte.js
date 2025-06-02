@@ -1,1 +1,2 @@
-module.exports = require('nanoid/random');
+var random = require('nanoid').random;
+module.exports = random;

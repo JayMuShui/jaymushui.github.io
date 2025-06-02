@@ -31,8 +31,7 @@ async function runMigrator (context, plugin, pkg = getPkg(context)) {
   log(`🚀  Running migrator of ${plugin.id}`)
   await migrator.generate({
     extractConfigFiles: true,
-    checkExisting: true,
-    sortPackageJson: false
+    checkExisting: true
   })
 
   const newDeps = migrator.pkg.dependencies
@@ -80,6 +79,11 @@ async function runMigrator (context, plugin, pkg = getPkg(context)) {
 }
 
 async function migrate (pluginId, { from }, context = process.cwd()) {
+  // TODO: remove this after upgrading to commander 4.x
+  if (!from) {
+    throw new Error(`Required option 'from' not specified`)
+  }
+
   const pluginName = resolvePluginId(pluginId)
   const pluginMigrator = loadModule(`${pluginName}/migrator`, context)
   if (!pluginMigrator) {

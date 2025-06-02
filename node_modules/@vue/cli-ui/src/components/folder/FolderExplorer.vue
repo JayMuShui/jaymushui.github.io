@@ -146,14 +146,13 @@
         />
       </transition>
       <template v-if="folderCurrent && folderCurrent.children">
-        <template v-for="folder of folderCurrent.children">
-          <FolderExplorerItem
-            v-if="showHidden || !folder.hidden"
-            :key="folder.name"
-            :folder="folder"
-            @select="openFolder(folder.path)"
-          />
-        </template>
+        <FolderExplorerItem
+          v-for="folder of folderCurrent.children"
+          v-if="showHidden || !folder.hidden"
+          :key="folder.name"
+          :folder="folder"
+          @select="openFolder(folder.path)"
+        />
       </template>
     </div>
 

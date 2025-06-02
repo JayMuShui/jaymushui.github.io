@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.2.17
+* Fixed CVE warning by moving to Nano ID 3.
+
 ## 2.2.16
 * Add deprecation notice to project readme (by Russell Dunphy).
 

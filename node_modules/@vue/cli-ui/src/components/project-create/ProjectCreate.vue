@@ -55,10 +55,7 @@
                       class="vue-ui-text danger banner"
                     >
                       <VueIcon icon="error" class="big"/>
-                      <span>
-                        {{ $t('org.vue.views.project-create.tabs.details.form.folder.folder-name-invalid') }}:
-                        {{ folderNameValidationMessage }}
-                      </span>
+                      <span>{{ $t('org.vue.views.project-create.tabs.details.form.folder.folder-name-invalid') }}</span>
                     </div>
 
                     <ApolloQuery
@@ -466,7 +463,7 @@
 
 <script>
 import Prompts from '@/mixins/Prompts'
-import validateNpmPackageName from 'validate-npm-package-name'
+import { isValidName } from '@/util/folders'
 import debounce from 'lodash.debounce'
 
 import CWD from '@/graphql/cwd/cwd.gql'
@@ -537,21 +534,8 @@ export default {
   },
 
   computed: {
-    folderNameValidationResult () {
-      return validateNpmPackageName(this.formData.folder)
-    },
-
     folderNameValid () {
-      return this.folderNameValidationResult.validForNewPackages
-    },
-
-    folderNameValidationMessage () {
-      const messages = [
-        ...(this.folderNameValidationResult.errors || []),
-        ...(this.folderNameValidationResult.warnings || [])
-      ]
-
-      return messages[0]
+      return isValidName(this.formData.folder)
     },
 
     detailsValid () {
