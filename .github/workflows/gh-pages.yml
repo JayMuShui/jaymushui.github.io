@@ -1,0 +1,36 @@
+name: Deploy Valaxy site to GitHub Pages
+
+on:
+  push:
+    branches: [valaxy]
+      # The branch where the project source code resides
+      # 项目源代码所在的分支
+      
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: 📦 Install Dependencies
+        run: pnpm install
+
+      - name: 🌌 Build Valaxy Blog
+        run: pnpm build
+
+      - name: 🪤 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true

@@ -1,0 +1,49 @@
+// 自定义 CSS 样式
+
+// 侧边栏背景图片样式
+.yun-fullscreen-menu {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url('https://cloudflare-imgbed-telegraph.pages.dev/file/MTYW_Nobi_With_Mu_20250514.webp');
+    background-position: bottom 0rem center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+  }
+}
+
+// 暗黑模式样式
+html.dark {
+  .yun-fullscreen-menu {
+    &::before {
+      background-image: url('https://cloudflare-imgbed-telegraph.pages.dev/file/MTYW_Onocle_CardGame_Mu_20250527.webp');
+      opacity: 0.8;
+    }
+  }
+}
+
+/* 强制让汉堡菜单在所有尺寸下都显示 */
+.menu-btn {
+  display: flex !important;
+  z-index: 999 !important;
+}
+
+/* 覆盖所有媒体查询，确保汉堡菜单始终显示 */
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: flex !important;
+  }
+}
+
+.is-home .menu-btn {
+  display: flex !important;
+}

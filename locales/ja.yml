@@ -1,0 +1,126 @@
+button:
+  about: について
+  back: 戻る
+  go: 確認
+  home: ホーム
+  toggle_light: ライトモードに切り替え
+  toggle_dark: ダークモードに切り替え
+  toggle_langs: 言語を切り替え
+  appearance: 外観
+intro:
+  desc: テーマ Yun
+  hi: こんにちは、{name}さん
+not-found: ページが見つかりません
+
+title:
+  archive: アーカイブ
+  category: カテゴリー
+  tag: タグ
+  album: アルバム
+  gallery: ギャラリー
+
+menu:
+  title: メニュー
+  home: ホーム
+  archives: アーカイブ
+  categories: カテゴリー
+  tags: タグ
+  about: について
+  search: 検索
+
+sidebar:
+  overview: サイト概要
+  toc: 目次
+  return_top: トップに戻る
+
+post:
+  author: 著者
+  decrypt: 復号
+  posted: 投稿日
+  edited: 更新日
+  created: 作成日
+  modified: 修正日
+  edit: 編集
+  more: もっと見る
+  untitled: 無題
+  toc_empty: この記事には目次がありません
+  pageview_count: 閲覧数
+  comment_count: コメント数
+  related_posts: 関連記事
+  view_link: リンクを表示
+  read_more: 続きを読む
+  cover: カバー
+  time_warning: 'この記事は {ago} に更新されました。内容が古い可能性があります。'
+  copyright:
+    author: 著者
+    link: 記事へのリンク
+    license_title: 著作権表示
+    license_content: 'このブログの記事は特に明記されていない限り、{0} のライセンスで提供されています。'
+
+footer:
+  powered: {0} によって駆動
+  theme: テーマ
+  total_views: 総アクセス数
+  total_visitors: 総訪問者数
+  live_time:
+    prefix: 運営時間：
+    suffix: QWQ
+    days: 日
+    hours: 時間
+    minutes: 分
+    seconds: 秒
+  statistics:
+    total_views: 総アクセス数
+    visitors: 訪問者数
+
+counter:
+  archives: 記事なし | 1記事 | {count}記事
+  categories: カテゴリーなし | 1カテゴリー | {count}カテゴリー
+  tags: タグなし | 1タグ | {count}タグ
+  albums: アルバムなし | 1アルバム | {count}アルバム
+  photos: 写真なし | 1枚の写真 | {count}枚の写真
+
+category:
+  uncategorized: 未分類
+
+search:
+  placeholder: 検索...
+  empty: '「{query}」の検索結果が見つかりませんでした'
+  hits_time: '{hits}件の結果（{time}ミリ秒）'
+  hits: '{count}件の結果'
+
+symbol:
+  comma: 、
+  period: 。
+  colon: ：
+
+reward:
+  donate: 寄付
+
+accessibility:
+  back: 戻る
+
+statistics:
+  word: 文字数
+  word_total: サイト総文字数
+  time: 読了時間
+  time_total: サイト総読了時間
+
+time:
+  day: 1日 | {count}日
+  hour: 1時間 | {count}時間
+  minute: 1分 | {count}分
+  second: 1秒 | {count}秒
+
+tooltip:
+  last_updated: 最終更新
+
+nav:
+  home: ホーム
+  posts: ブログ記事
+  gallery: ギャラリー
+  about: 社交自己紹介
+  # 予約されたナビゲーション項目
+  # custom1: カスタムナビ1
+  # custom2: カスタムナビ2
+  # custom3: カスタムナビ3 
