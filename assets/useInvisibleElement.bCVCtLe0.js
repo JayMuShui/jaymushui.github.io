@@ -1,0 +1,1 @@
+import{n as i,p as r}from"./chunks/@vueuse/motion.DIsYeaHF.js";import{c as t}from"./framework.DlV0k-5J.js";function c(e){const s=t(!1),{top:o}=i(e);return r(e,([{isIntersecting:n}])=>{s.value=n}),{show:()=>{s.value||window.scrollTo(0,o.value)}}}export{c as u};
